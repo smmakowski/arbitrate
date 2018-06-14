@@ -11,8 +11,12 @@
                 <element label="Filed" value="0"/>
             </choice>
         </element>
-        <element choice="1" label="Subject" mandatory="true" max_length="40" name="u_subject" type="choice">
-            <choice/>
+        <element choice="3" label="Subject" mandatory="true" max_length="40" name="u_subject" type="choice">
+            <choice>
+                <element label="Department/System Admin/General" value="general"/>
+                <element label="Task" sequence="100" value="task"/>
+                <element label="Personnel" sequence="200" value="personnel"/>
+            </choice>
         </element>
         <element label="Task Number" max_length="32" name="u_task_number" reference="task" reference_qual="stateIN3,4,7,8,6^opened_by=javascript:gs.getUserID()^EQ" type="reference" use_reference_qualifier="advanced"/>
         <index name="index">

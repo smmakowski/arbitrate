@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_subject" table="x_230726_arbitrate_cases" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Department/System Admin/General</label>
+            <language>en</language>
+            <name>x_230726_arbitrate_cases</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-14 20:14:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ab3c1cc0f721300475d8e8ce1050ee0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-14 20:14:35</sys_updated_on>
+            <value>general</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Task</label>
+            <language>en</language>
+            <name>x_230726_arbitrate_cases</name>
+            <sequence>100</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-14 20:12:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0830d840fb21300475d8e8ce1050ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-14 20:12:51</sys_updated_on>
+            <value>task</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Personnel</label>
+            <language>en</language>
+            <name>x_230726_arbitrate_cases</name>
+            <sequence>200</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-14 20:13:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d39345400fb21300475d8e8ce1050ebe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-14 20:13:22</sys_updated_on>
+            <value>personnel</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_subject</element>
+            <name>x_230726_arbitrate_cases</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-14 20:12:51</sys_created_on>
+            <sys_id>cc9345400fb21300475d8e8ce1050ebb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_subject</sys_name>
+            <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+            <sys_update_name>sys_choice_x_230726_arbitrate_cases_u_subject</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-14 20:12:51</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>u_offending_party</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-14 20:20:57</sys_created_on>
+        <sys_id>dd558dc40fb21300475d8e8ce1050e5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_offending_party</sys_name>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sys_ui_policy_action_dd558dc40fb21300475d8e8ce1050e5d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-14 20:20:57</sys_updated_on>
+        <table>x_230726_arbitrate_cases</table>
+        <ui_policy display_value="(Cases) Toggle Display and Mandatory for Offending Party depending on Subject">b984c5c40fb21300475d8e8ce1050e24</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

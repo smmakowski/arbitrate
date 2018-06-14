@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_offending_party" label="Offending Party" language="en" table="x_230726_arbitrate_cases">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_offending_party</element>
+            <help/>
+            <hint/>
+            <label>Offending Party</label>
+            <language>en</language>
+            <name>x_230726_arbitrate_cases</name>
+            <plural>Offending Parties</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-14 17:17:42</sys_created_on>
+            <sys_id>2a7b5c400f721300475d8e8ce1050e6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Offending Party</sys_name>
+            <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+            <sys_update_name>sys_documentation_x_230726_arbitrate_cases_u_offending_party_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-14 17:17:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

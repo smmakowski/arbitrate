@@ -2,22 +2,22 @@
 <record_update table="sys_ui_policy_action">
     <sys_ui_policy_action action="INSERT_OR_UPDATE">
         <disabled>false</disabled>
-        <field>u_offending_party</field>
+        <field>u_needit_number</field>
         <mandatory>true</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-14 20:20:57</sys_created_on>
-        <sys_id>dd558dc40fb21300475d8e8ce1050e5d</sys_id>
+        <sys_created_on>2018-06-19 03:40:23</sys_created_on>
+        <sys_id>847f4f5137721300502a03a973990efb</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>u_offending_party</sys_name>
+        <sys_name>u_needit_number</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_ui_policy_action_dd558dc40fb21300475d8e8ce1050e5d</sys_update_name>
+        <sys_update_name>sys_ui_policy_action_847f4f5137721300502a03a973990efb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 03:48:38</sys_updated_on>
+        <sys_updated_on>2018-06-19 03:53:23</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
-        <ui_policy display_value="(Cases) Toggle Display and Mandatory for Offending Party depending on Subject">b984c5c40fb21300475d8e8ce1050e24</ui_policy>
+        <ui_policy display_value="(Cases) Toggle Display  and Mandatory for Task Number depeding on Subject">b503c5840fb21300475d8e8ce1050ed2</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

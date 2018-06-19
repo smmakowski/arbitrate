@@ -4,6 +4,7 @@
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Abitrator" max_length="32" name="u_abitrator" reference="sys_user" reference_qual="roles=x_230726_arbitrate.arbitrator^EQ" reference_qual_condition="roles=x_230726_arbitrate.arbitrator^EQ" type="reference"/>
         <element label="Additional Details" max_length="500" name="u_additional_details" type="string"/>
+        <element label="NeedIt Number" max_length="32" name="u_needit_number" reference="x_58872_needit_needit" reference_qual="u_requested_for=javascript:gs.getUserID()^EQ" type="reference" use_reference_qualifier="advanced"/>
         <element label="Offending Party" max_length="32" name="u_offending_party" reference="sys_user" reference_qual="user_name!=javascript.getUserID()^EQ" reference_qual_condition="user_name!=javascript.getUserID()^EQ" type="reference"/>
         <element label="Short Description" mandatory="true" max_length="140" name="u_short_description" type="string"/>
         <element choice="3" label="Status" mandatory="true" max_length="40" name="u_status" type="choice">
@@ -11,22 +12,21 @@
                 <element label="Filed" value="0"/>
             </choice>
         </element>
-        <element choice="3" label="Subject" mandatory="true" max_length="40" name="u_subject" type="choice">
+        <element choice="3" default="task" label="Subject" mandatory="true" max_length="40" name="u_subject" type="choice">
             <choice>
                 <element label="Department/System Admin/General" value="general"/>
                 <element label="Task" sequence="100" value="task"/>
                 <element label="Personnel" sequence="200" value="personnel"/>
             </choice>
         </element>
-        <element label="Task Number" max_length="32" name="u_task_number" reference="task" reference_qual="stateIN3,4,7,8,6^opened_by=javascript:gs.getUserID()^EQ" type="reference" use_reference_qualifier="advanced"/>
         <index name="index">
-            <element name="u_offending_party"/>
+            <element name="u_needit_number"/>
         </index>
         <index name="index2">
-            <element name="u_abitrator"/>
+            <element name="u_offending_party"/>
         </index>
         <index name="index3">
-            <element name="u_task_number"/>
+            <element name="u_abitrator"/>
         </index>
     </element>
 </database>

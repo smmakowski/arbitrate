@@ -14,19 +14,23 @@
    if (isLoading || newValue === '') {
       return;
    }
-	
+	// set the offender field as editiable
+	g_form.setReadOnly('u_offending_party', false);
+	// create new GlideAjax Object
 	var getAssignedToFromNeedIt = new GlideAjax("getAssignedToFromNeedIt");
+	// add params to send with request
 	getAssignedToFromNeedIt.addParam('sysparm_name', 'getAssignedID');
 	getAssignedToFromNeedIt.addParam('sysparm_needItID', g_form.getValue("u_needit_number"));
-	alert(g_form.getValue("u_needit_number"));
+	// alert(g_form.getValue("u_needit_number")); // alert the value of the reference for purpose of 
+	// send request and execute callback on results
 	getAssignedToFromNeedIt.getXML(populateOffendingParty);
 }
-
+// calback for response
 function populateOffendingParty(response) {
 	var userFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
-	alert(userFromScriptInclude + "");
-		g_form.clearValue('u_offending_party');
-		g_form.setValue('u_offending_party', userFromScriptInclude);
+	g_form.clearValue('u_offending_party');
+	g_form.setValue('u_offending_party', userFromScriptInclude);
+	g_form.setReadOnly('u_offending_party', true);
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -34,7 +38,7 @@ function populateOffendingParty(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>987c59c437721300502a03a973990efd</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>populateOffenderFromNeedIt</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -42,7 +46,7 @@ function populateOffendingParty(response) {
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_client_987c59c437721300502a03a973990efd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 05:19:32</sys_updated_on>
+        <sys_updated_on>2018-06-19 20:22:03</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

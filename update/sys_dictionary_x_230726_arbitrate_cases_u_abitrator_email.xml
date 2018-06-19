@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_subject" table="x_230726_arbitrate_cases">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_abitrator_email" table="x_230726_arbitrate_cases">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -12,13 +12,13 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>3</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Subject</column_label>
+        <column_label>Abitrator Email</column_label>
         <comments/>
         <create_roles/>
-        <default_value>choose</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -28,14 +28,14 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_subject</element>
+        <element>u_abitrator_email</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>40</max_length>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>50</max_length>
         <name>x_230726_arbitrate_cases</name>
         <next_element/>
         <primary>false</primary>
@@ -53,16 +53,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-14 17:11:20</sys_created_on>
-        <sys_id>d27cc39d37321300502a03a973990ea9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Subject</sys_name>
+        <sys_created_on>2018-06-19 17:40:22</sys_created_on>
+        <sys_id>8e805e6537b21300502a03a973990edb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Abitrator Email</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_dictionary_x_230726_arbitrate_cases_u_subject</sys_update_name>
+        <sys_update_name>sys_dictionary_x_230726_arbitrate_cases_u_abitrator_email</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 15:23:23</sys_updated_on>
+        <sys_updated_on>2018-06-19 17:40:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

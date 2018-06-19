@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>goToSuggestions</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments>What is is this?</comments>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_style/>
+        <hint>Want to make a suggestion instead of a formal complaint instead? Click here (redirects to Suggestions app)!</hint>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Make suggestion instead</name>
+        <onclick>goToSuggestions()</onclick>
+        <order>100</order>
+        <script><![CDATA[//action.setRedirectURL("http://www.google.com");
+function goToSuggestions() {
+	// de-mandatorize mandatory fields to allow redirect (workaround)
+	g_form.setMandatory('u_offending_party', false);
+	g_form.setMandatory('u_needit_number', false);
+	g_form.setMandatory('u_short_description', false);
+	alert('fuckyou');
+	location.href = "http://www.google.com";
+// 	// call the redirect
+// 	var redirect = new GlideAjax('redirectToSuggestions');
+// 	redirect.addParam('sysparm_name', 'redirect');
+// 	redirect.getXML(emptyFunction);
+// 	action.setRedirectURL('http://www.google.com');
+// 	alert('why you no leave');
+}
+
+function emptyfunction() {
+	// do nothing
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>false</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-19 13:20:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6e731d6137321300502a03a973990ee8</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Make suggestion instead</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sys_ui_action_6e731d6137321300502a03a973990ee8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-19 16:29:30</sys_updated_on>
+        <table>x_230726_arbitrate_cases</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

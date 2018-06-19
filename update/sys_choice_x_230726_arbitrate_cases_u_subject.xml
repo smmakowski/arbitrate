@@ -6,19 +6,19 @@
             <element>u_subject</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Department/System Admin/General</label>
+            <label>Please make a selection...</label>
             <language>en</language>
             <name>x_230726_arbitrate_cases</name>
-            <sequence/>
+            <sequence>0</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-14 20:14:35</sys_created_on>
+            <sys_created_on>2018-06-19 15:18:45</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7ab3c1cc0f721300475d8e8ce1050ee0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>f11035a137721300502a03a973990eaf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-14 20:14:35</sys_updated_on>
-            <value>general</value>
+            <sys_updated_on>2018-06-19 15:23:23</sys_updated_on>
+            <value>choose</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -28,15 +28,15 @@
             <label>Task</label>
             <language>en</language>
             <name>x_230726_arbitrate_cases</name>
-            <sequence>100</sequence>
+            <sequence>1</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2018-06-14 20:12:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d0830d840fb21300475d8e8ce1050ee7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-14 20:12:51</sys_updated_on>
+            <sys_updated_on>2018-06-19 15:23:23</sys_updated_on>
             <value>task</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -47,16 +47,35 @@
             <label>Personnel</label>
             <language>en</language>
             <name>x_230726_arbitrate_cases</name>
-            <sequence>200</sequence>
+            <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2018-06-14 20:13:22</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d39345400fb21300475d8e8ce1050ebe</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-14 20:13:22</sys_updated_on>
+            <sys_updated_on>2018-06-19 15:23:23</sys_updated_on>
             <value>personnel</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Department/System Admin/General</label>
+            <language>en</language>
+            <name>x_230726_arbitrate_cases</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-14 20:14:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ab3c1cc0f721300475d8e8ce1050ee0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-19 15:23:23</sys_updated_on>
+            <value>general</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_subject</element>

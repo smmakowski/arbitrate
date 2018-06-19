@@ -3,38 +3,43 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <active>true</active>
-        <api_name>x_230726_arbitrate.getUserFromNeedIt</api_name>
+        <api_name>x_230726_arbitrate.getAssignedToFromNeedIt</api_name>
         <client_callable>true</client_callable>
         <description>gets userID from Assigned To field from the NeedIt Table ***REFACTOR FOR ADDIGNTE TO</description>
-        <name>getUserFromNeedIt</name>
-        <script><![CDATA[var getUserFromNeedIt = Class.create();
-getUserFromNeedIt.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-	getID: function() {
+        <name>getAssignedToFromNeedIt</name>
+        <script><![CDATA[var getAssignedToFromNeedIt = Class.create();
+getAssignedToFromNeedIt.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getAssignedID: function() {
 		// get the reference to User table from Assigned To field in Task
-		var needItRecord = new GlideRecord("needit");
+		//
+		gs.info("What the hell?");
+		//
+		var needItRecord = new GlideRecord("x_58872_needit_needit");
 		needItRecord.get(this.getParameter("sysparm_needItID"));
-		var assignedTo = needItRecord.requested_for; // change to assigned to***
+		var assignedTo = needItRecord.u_requested_for; // change to assigned to***
+		gs.info(assignedTo + "is the pserson assigned");
 		// use reference to get the name of the User
 		var userRecord = new GlideRecord("sys_user");
 		userRecord.get(assignedTo);
 		var userName = userRecord.name;
 		// return the name for use in client
-		return userName;
+		
+		return userName + "";
 		
 	},
-    type: 'getUserFromNeedIt'
+    type: 'getAssignedToFromNeedIt'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-14 21:52:12</sys_created_on>
         <sys_id>8268954437721300502a03a973990e8a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>getUserFromNeedIt</sys_name>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>getAssignedToFromNeedIt</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_include_8268954437721300502a03a973990e8a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 03:00:04</sys_updated_on>
+        <sys_updated_on>2018-06-19 05:09:41</sys_updated_on>
     </sys_script_include>
 </record_update>

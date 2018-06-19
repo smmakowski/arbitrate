@@ -6,37 +6,39 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter/>
-        <hint>View all case actions (Admin only)</hint>
+        <filter table="x_230726_arbitrate_cases">u_complaintant=javascript:gs.getUserID()^EQ<item endquery="false" field="u_complaintant" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint>View complaints that I have filed</hint>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Case Actions</mobile_title>
+        <mobile_title>My Complaints</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_230726_arbitrate_case_actions</name>
-        <order/>
+        <name>x_230726_arbitrate_cases</name>
+        <order>500</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_230726_arbitrate.admin</roles>
+        <roles>x_230726_arbitrate.user</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-14 18:58:50</sys_created_on>
+        <sys_created_on>2018-06-19 15:52:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>04a2b8800f721300475d8e8ce1050e01</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>All Case Actions (Admin)</sys_name>
+        <sys_id>dda7fd6537721300502a03a973990e3c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Complaints</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_app_module_04a2b8800f721300475d8e8ce1050e01</sys_update_name>
+        <sys_update_name>sys_app_module_dda7fd6537721300502a03a973990e3c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 15:57:57</sys_updated_on>
+        <sys_updated_on>2018-06-19 19:38:19</sys_updated_on>
         <timeline_page/>
-        <title>All Case Actions (Admin)</title>
+        <title>My Complaints</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

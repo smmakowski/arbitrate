@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-06-19 03:48:38</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
-        <ui_policy display_value="(Cases) Toggle Display and Mandatory for Offending Party depending on Subject">b984c5c40fb21300475d8e8ce1050e24</ui_policy>
+        <ui_policy display_value="(Cases) if Subject is 'personnel'">b984c5c40fb21300475d8e8ce1050e24</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

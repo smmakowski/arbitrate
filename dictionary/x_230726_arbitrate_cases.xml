@@ -2,7 +2,6 @@
 <database>
     <element label="Cases" max_length="40" name="x_230726_arbitrate_cases" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Abitrator" max_length="32" name="u_abitrator" reference="sys_user" reference_qual="roles=x_230726_arbitrate.arbitrator^EQ" reference_qual_condition="roles=x_230726_arbitrate.arbitrator^EQ" type="reference"/>
         <element label="Abitrator Email" max_length="50" name="u_abitrator_email" type="string"/>
         <element label="Additional Details" max_length="500" name="u_additional_details" type="string"/>
         <element label="Arbitrator" max_length="32" name="u_arbitrator" reference="sys_user" type="reference"/>
@@ -11,14 +10,16 @@
         <element label="NeedIt Number" max_length="32" name="u_needit_number" reference="x_58872_needit_needit" type="reference"/>
         <element label="Offending Party" max_length="32" name="u_offending_party" reference="sys_user" reference_qual="user_name!=javascript.getUserID()^EQ" reference_qual_condition="user_name!=javascript.getUserID()^EQ" type="reference"/>
         <element label="Offending Party Email" max_length="50" name="u_offending_party_email" type="string"/>
-        <element label="New Reference" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
         <element label="Short Description" mandatory="true" max_length="140" name="u_short_description" type="string"/>
         <element choice="3" label="Status" mandatory="true" max_length="40" name="u_status" type="choice">
             <choice>
-                <element label="Awaiting Decision" value="awaiting_decision"/>
-                <element label="Decision Made - At fault" value="at_fault"/>
+                <element label="Accepted" value="-1"/>
+                <element label="Awaiting Decision" value="3"/>
+                <element label="Decision Made - At fault" value="-3"/>
+                <element label="Decision Made - Not at Fault" value="-4"/>
                 <element label="Filed" value="0"/>
-                <element label="In Progress" value="in_progress"/>
+                <element label="In Progress" value="1"/>
+                <element label="Retracted" value="-2"/>
             </choice>
         </element>
         <element choice="3" default="choose" label="Subject" mandatory="true" max_length="40" name="u_subject" type="choice">
@@ -33,19 +34,13 @@
             <element name="u_arbitrator"/>
         </index>
         <index name="index2">
-            <element name="u_reference_1"/>
-        </index>
-        <index name="index3">
             <element name="u_needit_number"/>
         </index>
-        <index name="index4">
+        <index name="index3">
             <element name="u_complaintant"/>
         </index>
-        <index name="index5">
+        <index name="index4">
             <element name="u_offending_party"/>
-        </index>
-        <index name="index6">
-            <element name="u_abitrator"/>
         </index>
     </element>
 </database>

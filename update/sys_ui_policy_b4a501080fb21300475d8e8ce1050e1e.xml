@@ -19,7 +19,7 @@
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
 	g_form.clearValue('u_needit_number');
-	g_form.setValue("u_offending_party", "System Administrator");
+	g_form.setValue("u_offending_party", "6816f79cc0a8016401c5a33be04be441");
 	g_form.setReadOnly('u_offending_party', true);
 }]]></script_true>
         <set_values/>
@@ -30,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b4a501080fb21300475d8e8ce1050e1e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>(Cases) if Subject is 'general'</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_policy_b4a501080fb21300475d8e8ce1050e1e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 20:36:53</sys_updated_on>
+        <sys_updated_on>2018-06-20 21:16:47</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <ui_type>0</ui_type>
         <view/>

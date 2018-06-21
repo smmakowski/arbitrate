@@ -2,19 +2,23 @@
 <database>
     <element label="Decisions" max_length="40" name="x_230726_arbitrate_decisions" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Additional Details" max_length="500" name="u_additional_details" type="string"/>
         <element label="Arbitrator" max_length="32" name="u_arbitrator" reference="sys_user" type="reference"/>
         <element label="Case Number" max_length="32" name="u_case_number" reference="x_230726_arbitrate_cases" type="reference"/>
-        <element choice="3" label="Decision" mandatory="true" max_length="40" name="u_decision" type="choice">
-            <choice>
-                <element label="Responsible" value="responsible"/>
-                <element label="Not Reponsible" sequence="200" value="not_reponsible"/>
-            </choice>
-        </element>
+        <element label="Complaintant" max_length="32" name="u_complaintant" reference="sys_user" type="reference"/>
         <element label="Offender is Responsible" max_length="40" name="u_offender_is_responsible" type="boolean"/>
+        <element label="Offending Party" max_length="32" name="u_offending_party" reference="sys_user" type="reference"/>
+        <element label="Reasoning" max_length="500" name="u_reasoning" type="string"/>
         <index name="index">
             <element name="u_arbitrator"/>
         </index>
         <index name="index2">
+            <element name="u_complaintant"/>
+        </index>
+        <index name="index3">
+            <element name="u_offending_party"/>
+        </index>
+        <index name="index4">
             <element name="u_case_number"/>
         </index>
     </element>

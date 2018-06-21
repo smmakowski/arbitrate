@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="u_decision" label="Decision" language="en" table="x_230726_arbitrate_decisions">
+    <sys_documentation element="u_offending_party" label="Offending Party" language="en" table="x_230726_arbitrate_decisions">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>u_decision</element>
+            <element>u_offending_party</element>
             <help/>
             <hint/>
-            <label>Decision</label>
+            <label>Offending Party</label>
             <language>en</language>
             <name>x_230726_arbitrate_decisions</name>
-            <plural>Decisions</plural>
+            <plural>Offending Parties</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-21 16:29:34</sys_created_on>
-            <sys_id>e993d45e37fa1300502a03a973990efc</sys_id>
+            <sys_created_on>2018-06-21 19:39:21</sys_created_on>
+            <sys_id>710ff416377e1300502a03a973990ee7</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Decision</sys_name>
+            <sys_name>Offending Party</sys_name>
             <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
             <sys_policy/>
             <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-            <sys_update_name>sys_documentation_x_230726_arbitrate_decisions_u_decision_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_230726_arbitrate_decisions_u_offending_party_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-21 16:29:34</sys_updated_on>
+            <sys_updated_on>2018-06-21 19:39:21</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

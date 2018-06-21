@@ -7,21 +7,56 @@
 }
 
 function renderDecision() {
-	// clear any error messages
+	// get all the values needed from form
+	var caseNum = g_form.getUniqueValue();
+	var arbitrator = g_form.getValue('u_arbitrator');
+	var offender = g_form.getValue('u_offending_party');
+	var complaintant = g_form.getValue('u_complaintant');
+	
+	// get reason and decision from UI page inputs
 	var reason = document.getElementById('reason').value;
-	var decision = 'responsible';
-	alert(document.getElementById('reason').value);
-	if (document.getElementById('reason').value === '') { // if no reasoning err
-		alert('you need to fill out the form');
+	var additional = document.getElementById('additional').value;
+	var decision = 'true';
+	// validate that both reasoning and additional details hav ebeen filled
+	if (reason === '' || additional === '') { // if no reasoning err
+		alert('ERROR: You must fill out your reasoning and additional details in order to submit you decision!');
 		return false;
 	}
-	
-	if (document.getElementById('not_responsible').checked === true) {
-		alert('what?');
-	} else {
-		alert('why?');
+	// if offender not at fault change decsion
+	if (document.getElementById('not_at_fault').checked === true) {
+		decision = 'false';
 	}
-	//GlideDialogWindow.get().destroy();
+	// call script include to add decision to decision table, change status in cases
+	var createDecisionAndUpdate = new GlideAjax('processDecision');
+	createDecisionAndUpdate.addParam('sysparm_name', 'insertAndUpdate');
+	createDecisionAndUpdate.addParam('sysparm_caseNum', caseNum);
+	createDecisionAndUpdate.addParam('sysparm_arbitrator', arbitrator);
+	createDecisionAndUpdate.addParam('sysparm_offender', offender);
+	createDecisionAndUpdate.addParam('sysparm_complaintant', complaintant);
+	createDecisionAndUpdate.addParam('sysparm_decision', decision);
+	createDecisionAndUpdate.addParam('sysparm_reason', reason);
+	createDecisionAndUpdate.addParam('sysparm_additional', additional);
+	// getXML
+	createDecisionAndUpdate.getXML(completeDecisionProcess);
+}
+
+function completeDecisionProcess(response) {
+	var answerFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
+	if (answerFromScriptInclude.length) {
+		alert('Your decision has been processed.');
+		if (answerFromScriptInclude === 'true') {
+			g_form.setValue('u_status', 1);
+		} else {
+			g_form.setValue('u_status', 2);
+		}
+		g_form.save();
+		alert('Your decision has been processed.');
+			
+		//GlideDialogWindow.get().destroy();
+		//gsftSubmit(null, g_form.getFormElement(), 'renderDecision');
+	} else {
+		alert('There has been an error processing your decision. Please try again later');
+	}
 }]]></client_script>
         <description>Form for creating a decision for Render decision UI action</description>
         <direct>false</direct>
@@ -31,11 +66,13 @@ function renderDecision() {
 	<p>Please select your decision, and describe your reasoning...</p>
 	<form>
 	Decision Type:<br />
-	<input id="responsible" type="radio" name="decisionType" value="responsible" checked="true" /><label>Offending Party At Fault</label><br />
-	<input id="not_responsible" type="radio" name="decisionType" value="not_responsible" /><label>Offending Party Not At Fault</label><br />
+	<input id="at_fault" type="radio" name="decisionType" value="at_fault" checked="true" /><label>Offending Party At Fault</label><br />
+	<input id="not_at_fault" type="radio" name="decisionType" value="not_at_fault" /><label>Offending Party Not At Fault</label><br />
 	Reasoning:<br />
 	</form>
 	<input id="reason" type="text" /><br />
+	Additional Details (Please describe suggestion for Remedy here):<br />
+	<input id="additional" type="text" /><br />
 	<button onClick="renderDecision()">Render Decision</button>
 	<button onClick="cancelPage()">Cancel</button>
 </j:jelly>]]></html>
@@ -45,13 +82,13 @@ function renderDecision() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-21 03:14:36</sys_created_on>
         <sys_id>b4e5550a37761300502a03a973990ef5</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>chooseDecision</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_page_b4e5550a37761300502a03a973990ef5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-21 16:46:37</sys_updated_on>
+        <sys_updated_on>2018-06-21 20:21:15</sys_updated_on>
     </sys_ui_page>
 </record_update>

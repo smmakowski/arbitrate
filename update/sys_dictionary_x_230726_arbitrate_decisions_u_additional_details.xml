@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_decision" table="x_230726_arbitrate_decisions">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_additional_details" table="x_230726_arbitrate_decisions">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -12,10 +12,10 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>3</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Decision</column_label>
+        <column_label>Additional Details</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -28,14 +28,14 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_decision</element>
+        <element>u_additional_details</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>40</max_length>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>500</max_length>
         <name>x_230726_arbitrate_decisions</name>
         <next_element/>
         <primary>false</primary>
@@ -53,16 +53,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-21 16:29:34</sys_created_on>
-        <sys_id>d673545e37fa1300502a03a973990e5d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Decision</sys_name>
+        <sys_created_on>2018-06-21 19:38:37</sys_created_on>
+        <sys_id>3fbeb416377e1300502a03a973990e12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Additional Details</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_dictionary_x_230726_arbitrate_decisions_u_decision</sys_update_name>
+        <sys_update_name>sys_dictionary_x_230726_arbitrate_decisions_u_additional_details</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-21 16:31:24</sys_updated_on>
+        <sys_updated_on>2018-06-21 19:38:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

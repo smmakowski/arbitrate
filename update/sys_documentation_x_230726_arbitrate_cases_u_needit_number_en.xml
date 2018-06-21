@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="" label="Case Actions" language="en" table="x_230726_arbitrate_case_actions">
+    <sys_documentation element="u_needit_number" label="NeedIt Number" language="en" table="x_230726_arbitrate_cases">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element/>
+            <element>u_needit_number</element>
             <help/>
             <hint/>
-            <label>Case Actions</label>
+            <label>NeedIt Number</label>
             <language>en</language>
-            <name>x_230726_arbitrate_case_actions</name>
-            <plural>Case Actions</plural>
+            <name>x_230726_arbitrate_cases</name>
+            <plural>NeedIt Numbers</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-14 18:58:51</sys_created_on>
-            <sys_id>c0a2bc4c0f721300475d8e8ce1050e2f</sys_id>
+            <sys_created_on>2018-06-21 04:14:51</sys_created_on>
+            <sys_id>876ba90637b61300502a03a973990e76</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Case Actions</sys_name>
+            <sys_name>NeedIt Number</sys_name>
             <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
             <sys_policy/>
             <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-            <sys_update_name>sys_documentation_x_230726_arbitrate_case_actions__en</sys_update_name>
+            <sys_update_name>sys_documentation_x_230726_arbitrate_cases_u_needit_number_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-14 18:58:51</sys_updated_on>
+            <sys_updated_on>2018-06-21 04:14:51</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

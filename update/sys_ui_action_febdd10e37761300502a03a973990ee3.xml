@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>makeSuggestion</action_name>
+        <action_name>renderDecision</action_name>
         <active>true</active>
         <client>true</client>
         <comments/>
@@ -11,7 +11,7 @@
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_style/>
-        <hint>Make a Suggestion instead of a formal complaint</hint>
+        <hint/>
         <list_action>false</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
@@ -20,43 +20,34 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Make Suggestion</name>
-        <onclick>goToSuggestions()</onclick>
-        <order>400</order>
-        <script><![CDATA[function goToSuggestions() {
-	
-	g_form.setValue('u_subject', 'personnel');
-	g_form.setValue('u_offending_party', '46d96f57a9fe198101947a9620895886');
-	g_form.setValue('u_short_description', '3xx-suggestions-redirect');
-	
-	gsftSubmit(null, g_form.getFormElement(), 'makeSuggestion');
-}
-//action.setRedirectURL('x_232875_suggestio_suggestions.do?sys_id=-1');
-if(typeof window == 'undefined'){
-	gs.setRedirect('x_232875_suggestio_suggestions.do?sys_id=-1');
-}
-
-// window.open('x_232875_suggestio_suggestions.do?sys_id=-1', '_blank');
-]]></script>
-        <show_insert>true</show_insert>
+        <name>Render Decision</name>
+        <onclick>getDecision()</onclick>
+        <order>100</order>
+        <script><![CDATA[function getDecision() {
+	var gdw = new GlideDialogWindow('x_230726_arbitrate_chooseDecision');
+	gdw.setTitle('Render Decision');
+	gdw.setSize(300, 100);
+	gdw.render();
+}]]></script>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
-        <show_update>false</show_update>
+        <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-19 13:20:03</sys_created_on>
+        <sys_created_on>2018-06-21 03:32:42</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>6e731d6137321300502a03a973990ee8</sys_id>
-        <sys_mod_count>46</sys_mod_count>
-        <sys_name>Make Suggestion</sys_name>
+        <sys_id>febdd10e37761300502a03a973990ee3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Render Decision</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_ui_action_6e731d6137321300502a03a973990ee8</sys_update_name>
+        <sys_update_name>sys_ui_action_febdd10e37761300502a03a973990ee3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-21 04:11:07</sys_updated_on>
+        <sys_updated_on>2018-06-21 15:06:31</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

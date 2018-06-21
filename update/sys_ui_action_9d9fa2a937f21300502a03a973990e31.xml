@@ -22,9 +22,10 @@
         <list_style/>
         <name>Retract Case</name>
         <onclick>getConfirmation()</onclick>
-        <order>100</order>
+        <order>200</order>
         <script><![CDATA[// client side confirmation
 function getConfirmation() {
+	//alert(current.u_offending_party + '');
 	// askfor confirmation
 	var willRetract = confirm('By clicking this button, you hereby confirm that you wish to retract your case.\nBy doing so you end the current Arbitration Process. If you decide to reopen this case, you must create a new one.\nArbibitrators have access to all dispositons, and will be able to end any new related cases pending review.');
 	// if retracts modify record and update with server-sdie
@@ -56,7 +57,7 @@ function changeRecord() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d9fa2a937f21300502a03a973990e31</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Retract Case</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -64,7 +65,7 @@ function changeRecord() {
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_action_9d9fa2a937f21300502a03a973990e31</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-21 01:33:15</sys_updated_on>
+        <sys_updated_on>2018-06-21 04:10:49</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

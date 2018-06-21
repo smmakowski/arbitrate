@@ -17,12 +17,12 @@ getAssignedToFromNeedIt.prototype = Object.extendsObject(global.AbstractAjaxProc
 		// get the record from the needItTable
 		nir.get(niId);
 		// gs.info(niId + ' has been queried in the NeedIt table');
-		// gs.info(nir.assigned_to + 'is the reference assigned to this task');
+		gs.info(nir.assigned_to + 'is the reference assigned to this task');
 		// if someone assigned then send, else return Alternative
 		if (nir.assigned_to) {
 			return nir.assigned_to + '';
 		} else {
-			return 'System Administrator';
+			return '6816f79cc0a8016401c5a33be04be441'; // system administrator
 		}	
 	},
     type: 'getAssignedToFromNeedIt'
@@ -31,13 +31,13 @@ getAssignedToFromNeedIt.prototype = Object.extendsObject(global.AbstractAjaxProc
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-14 21:52:12</sys_created_on>
         <sys_id>8268954437721300502a03a973990e8a</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>getAssignedToFromNeedIt</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_include_8268954437721300502a03a973990e8a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 18:49:20</sys_updated_on>
+        <sys_updated_on>2018-06-21 14:03:12</sys_updated_on>
     </sys_script_include>
 </record_update>

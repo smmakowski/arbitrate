@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-06-19 20:35:24</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
-        <ui_policy display_value="(Cases) if Subject is 'general'">b4a501080fb21300475d8e8ce1050e1e</ui_policy>
+        <ui_policy display_value="Cases if Subject is 'general'">b4a501080fb21300475d8e8ce1050e1e</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

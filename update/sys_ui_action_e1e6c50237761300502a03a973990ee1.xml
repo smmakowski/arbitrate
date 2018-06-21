@@ -3,7 +3,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>acceptResponsibility</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <comments/>
         <condition/>
         <form_action>true</form_action>
@@ -21,8 +21,8 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Accept Responsibility</name>
-        <onclick/>
-        <order>100</order>
+        <onclick>getConfirmation()</onclick>
+        <order>500</order>
         <script><![CDATA[// client side confirmation
 function getConfirmation() {
 	// askfor confirmation
@@ -55,7 +55,7 @@ function changeRecord() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e1e6c50237761300502a03a973990ee1</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Accept Responsibility</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -63,8 +63,8 @@ function changeRecord() {
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_action_e1e6c50237761300502a03a973990ee1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-21 01:38:44</sys_updated_on>
-        <table/>
+        <sys_updated_on>2018-06-21 14:59:33</sys_updated_on>
+        <table>x_230726_arbitrate_cases</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

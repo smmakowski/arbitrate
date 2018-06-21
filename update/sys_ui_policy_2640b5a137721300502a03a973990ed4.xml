@@ -22,22 +22,22 @@
 	g_form.clearValue('u_needit_number');
 }]]></script_true>
         <set_values/>
-        <short_description>(Cases) if Subject is 'choose'</short_description>
+        <short_description>Cases Subject is 'choose'</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-19 15:20:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2640b5a137721300502a03a973990ed4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>(Cases) if Subject is 'choose'</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Cases Subject is 'choose'</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_policy_2640b5a137721300502a03a973990ed4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 15:33:17</sys_updated_on>
+        <sys_updated_on>2018-06-21 13:33:59</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <ui_type>0</ui_type>
         <view/>

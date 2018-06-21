@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Populates offender from needit by calling </description>
+        <field>u_needit_number</field>
+        <global>true</global>
+        <messages/>
+        <name>populateOffenderFromNeedIt</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	var getAssignedToFromNeedIt = new GlideAjax('getAssignedToFromNeedIt');
+	getAssignedToFromNeedIt.addParam('sysparm_name', 'getAssignedID');
+	getAssignedToFromNeedIt.addParam('sysparm_needItID', g_form.getValue('u_needit_number'));
+   //Type appropriate comment here, and begin script below
+   getAssignedToFromNeedIt.getXML(populateOffender);
+}
+
+function populateOffender(response) {
+	alert('okay... the thing went through');
+	var userFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
+	alert(userFromScriptInclude);
+	g_form.setValue('u_offending_party', userFromScriptInclude);
+	g_form.setReadOnly('u_offending_party', true);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-21 13:56:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85aeab8637ba1300502a03a973990efd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>populateOffenderFromNeedIt</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sys_script_client_85aeab8637ba1300502a03a973990efd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-21 14:08:33</sys_updated_on>
+        <table>x_230726_arbitrate_cases</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

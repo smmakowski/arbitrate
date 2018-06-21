@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>executeAction</action_name>
+        <action_name>retractCase</action_name>
         <active>true</active>
         <client>true</client>
         <comments/>
-        <condition>current.u_complaintant == gs.getUserID() &amp;&amp; (current.status == 'filed' || current.status == 'in_progress')</condition>
+        <condition/>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -21,10 +21,30 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Retract Case</name>
-        <onclick>hello()</onclick>
+        <onclick>getConfirmation()</onclick>
         <order>100</order>
-        <script><![CDATA[function hello(){
-	alert('hello there');
+        <script><![CDATA[// client side confirmation
+function getConfirmation() {
+	// askfor confirmation
+	var willRetract = confirm('By clicking this button, you hereby confirm that you wish to retract your case.\nBy doing so you end the current Arbitration Process. If you decide to reopen this case, you must create a new one.\nArbibitrators have access to all dispositons, and will be able to end any new related cases pending review.');
+	// if retracts modify record and update with server-sdie
+	if (willRetract) {
+		
+		gsftSubmit(null, g_form.getFormElement(), 'retractCase');
+	} else { // cancel submission
+		return false;
+	}
+}
+
+if (typeof window == 'undefined') {
+	changeRecord();
+}
+
+function changeRecord() {
+	gs.info('current status is ' + current.u_status + '');
+	current.u_status = 'retracted';
+	gs.info('current status is ' + current.u_status + '');
+	current.update();
 }]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -36,7 +56,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d9fa2a937f21300502a03a973990e31</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Retract Case</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -44,8 +64,8 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_action_9d9fa2a937f21300502a03a973990e31</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 20:04:10</sys_updated_on>
-        <table/>
+        <sys_updated_on>2018-06-21 01:33:15</sys_updated_on>
+        <table>x_230726_arbitrate_cases</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

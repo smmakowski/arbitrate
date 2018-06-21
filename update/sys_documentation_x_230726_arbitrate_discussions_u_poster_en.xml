@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_poster" label="Poster" language="en" table="x_230726_arbitrate_discussions">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_poster</element>
+            <help/>
+            <hint/>
+            <label>Poster</label>
+            <language>en</language>
+            <name>x_230726_arbitrate_discussions</name>
+            <plural>Posters</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-21 21:22:15</sys_created_on>
+            <sys_id>0996dd1237be1300502a03a973990ebb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Poster</sys_name>
+            <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+            <sys_update_name>sys_documentation_x_230726_arbitrate_discussions_u_poster_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:22:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

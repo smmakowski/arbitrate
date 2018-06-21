@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Discussions" max_length="40" name="x_230726_arbitrate_discussions" type="collection">
+        <element label="Body" mandatory="true" max_length="500" name="u_body" type="string"/>
+        <element label="Case Number" mandatory="true" max_length="32" name="u_case_number" reference="x_230726_arbitrate_cases" type="reference"/>
+        <element label="Poster" mandatory="true" max_length="32" name="u_poster" reference="sys_user" type="reference"/>
+        <element label="Subject" mandatory="true" max_length="140" name="u_subject" type="string"/>
+        <element choice="1" label="Type" mandatory="true" max_length="40" name="u_type" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="u_poster"/>
+        </index>
+        <index name="index2">
+            <element name="u_case_number"/>
+        </index>
+    </element>
+</database>

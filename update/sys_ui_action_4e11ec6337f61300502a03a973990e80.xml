@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>viewHosicoVideo</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments>View a random video of Hosico Cat</comments>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_style/>
+        <hint>Arbitration got you down? Click here to brighten your mood with a cute cat video</hint>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>true</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>View a Cute Cat Video</name>
+        <onclick>openHosicoVideo()</onclick>
+        <order>200</order>
+        <script><![CDATA[function openHosicoVideo() {
+	// get Hosico video using script include
+	var getVideo = new GlideAjax('getHosicoVideoFromRest');
+	getVideo.addParam('sysparm_name', 'getURL');
+	getVideo.getXML(openVideoWindow);
+	// set arbitrary data if new recor 
+	
+}
+// opens video in new tab
+function openVideoWindow(response) {
+	var idFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
+	top.window.open('https://www.youtube.com/watch?v=' + idFromScriptInclude, '_blank');
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-25 14:46:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4e11ec6337f61300502a03a973990e80</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>View a Cute Cat Video</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sys_ui_action_4e11ec6337f61300502a03a973990e80</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-25 15:45:31</sys_updated_on>
+        <table>x_230726_arbitrate_cases</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -9,15 +9,15 @@
         <element label="NeedIt Number" max_length="32" name="u_needit_number" reference="x_58872_needit_needit" reference_qual="sys_created_by=javascript:gs.getUserID()^ORu_requested_for=javascript:gs.getUserID()^EQ" type="reference" use_reference_qualifier="advanced"/>
         <element label="Offending Party" max_length="32" name="u_offending_party" reference="sys_user" reference_qual="user_name!=javascript.getUserID()^EQ" reference_qual_condition="user_name!=javascript.getUserID()^EQ" type="reference"/>
         <element label="Short Description" mandatory="true" max_length="140" name="u_short_description" type="string"/>
-        <element choice="3" default="0" label="Status" max_length="40" name="u_status" read_only="true" type="choice">
+        <element choice="3" default="filed" label="Status" max_length="40" name="u_status" read_only="true" type="choice">
             <choice>
-                <element label="Accepted" value="-1"/>
-                <element label="Awaiting Decision" value="3"/>
-                <element label="Decision Made - At fault" value="-3"/>
-                <element label="Decision Made - Not at Fault" value="-4"/>
-                <element label="Filed" value="0"/>
-                <element label="In Progress" value="1"/>
-                <element label="Retracted" value="-2"/>
+                <element label="Accepted" value="accepted"/>
+                <element label="Awaiting Decision" value="awaiting_decicision"/>
+                <element label="Decision Made - At fault" value="at_fault"/>
+                <element label="Decision Made - Not at Fault" value="not_at_fault"/>
+                <element label="Filed" value="filed"/>
+                <element label="In Progress" value="in_progress"/>
+                <element label="Retracted" value="retracted"/>
             </choice>
         </element>
         <element choice="3" default="choose" label="Subject" mandatory="true" max_length="40" name="u_subject" type="choice">

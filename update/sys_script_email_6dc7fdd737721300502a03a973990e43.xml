@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_230726_arbitrate_cases_script_2</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[if (current.status === 'retracted') {
+	template.print('The complaintant has retracted their complaint. The Offending Party is not responsible for any actions declared in the initial complaint or added during the discussion process (if applicable).');
+} else if (current.status === 'not_at_fault') {
+	template.print('The arbitrator in this matter has found the Offending Party not at fault based on the discussion and all discussion that has taken place. As a result the Offending party is not responsible. this concludes the ArbITration process for this case');
+} else if (current.status === 'rejected') {
+	templeate.print('The arbitrator in this case has rejected this case as the complaint is unreasonable or does not have merit. The Offending Party is not responsible for the complaint. If the Complaintant has any issues with this. They may file a new complaint.');
+}]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-25 02:21:13</sys_created_on>
+        <sys_id>6dc7fdd737721300502a03a973990e43</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_230726_arbitrate_cases_script_2</sys_name>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sys_script_email_6dc7fdd737721300502a03a973990e43</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-25 02:24:59</sys_updated_on>
+    </sys_script_email>
+</record_update>

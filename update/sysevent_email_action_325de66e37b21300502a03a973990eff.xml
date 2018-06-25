@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
-        <action_insert>true</action_insert>
-        <action_update>false</action_update>
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_230726_arbitrate_cases</collection>
-        <condition table="x_230726_arbitrate_cases">u_status=0^EQ<item endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="0"/>
+        <condition table="x_230726_arbitrate_cases">u_status=1^EQ<item endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="1"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -38,14 +38,9 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<div>To all parties involved:</div>
-<div>&nbsp;</div>
-<div>${u_complaintant.name} has filed a complaint, and arbitration has begun.</div>
-<div>&nbsp;</div>
-<div>${mail_script:x_230726_arbitrate_cases_script_1}</div>
-<div>&nbsp;</div>
-<div>The details for this matter are below.</div>
-<div>&nbsp;</div>
+        <message_html><![CDATA[<p>To all parties concerned,</p>
+<p>${u_offending_party.name} has pleaded "Deny" in the matter named in the subject. As a result, this case has been moved into the Discussion Phase. In this phase, the complaintant, offending party, and arbitrator will have the opportunity to discuss the matter. Do view or add to the discussion, please go to the My Cases (if complaintaint), Cases against me (if offending party), or Cases to Arbitrate (if arbitrator) module, and click on the applicable link or button.</p>
+<p>General case infomation is below.&nbsp;</p>
 <div>Number: ${number}</div>
 <div>Complaintant: ${u_complaintant.name}</div>
 <div>Offending Party: ${u_offending_party.name}</div>
@@ -56,10 +51,11 @@
 <div>&nbsp;</div>
 <div>Best Regards,</div>
 <div>&nbsp;</div>
-<div>The Ar-BOT-trator</div>]]></message_html>
+<div>The Ar-BOT-rator</div>
+<div>&nbsp;</div>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Complaint filed</name>
+        <name>Case moved to discussion</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -70,23 +66,23 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>RE: Case no. ${number}; Complaint Filed</subject>
+        <subject>RE: Case no. ${number}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-21 15:18:48</sys_created_on>
+        <sys_created_on>2018-06-22 22:22:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3f13c81637fa1300502a03a973990ec6</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Complaint filed</sys_name>
+        <sys_id>325de66e37b21300502a03a973990eff</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Case moved to discussion</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sysevent_email_action_3f13c81637fa1300502a03a973990ec6</sys_update_name>
+        <sys_update_name>sysevent_email_action_325de66e37b21300502a03a973990eff</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 02:13:01</sys_updated_on>
+        <sys_updated_on>2018-06-25 02:30:41</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

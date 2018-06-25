@@ -4,7 +4,7 @@
         <active>true</active>
         <condition/>
         <conditional>false</conditional>
-        <name>Remind Abitrators of active cases</name>
+        <name>Move unplease Cases to In Progress</name>
         <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
@@ -13,19 +13,42 @@
         <run_start>2018-06-20 19:06:05</run_start>
         <run_time>1970-01-01 08:00:00</run_time>
         <run_type>daily</run_type>
-        <script><![CDATA[// TODO: send notification with script with information regarding current cases]]></script>
+        <script><![CDATA[// get all case that are currently filed
+gs.info('Now running pleadCases');
+var now = new GlideDateTime();
+gs.info('now is ' + now.getDate() + now.getTime());
+
+var filedCases = new GlideRecord('x_230726_arbitrate_cases');
+filedCases.addQuery('u_status', 'filed');
+filedCases.query();
+gs.info('Query underway!');
+
+while(filedCases.next()) {
+	gs.info('theres something here');
+// 	var caseDate = new GlideDateTime(filedCases.sys_created);
+// 	gs.info(caseDate.getDate());
+// 	var deadline = new GlideDateTime(caseDate.addDaysLocalTime(3));
+// 	gs.info('case date is ' + caseDate.getDate() + 'Deadline date is ' + deadline.getDate());
+	
+// 	if (caseDate.before(now)) {
+// 		filedCases.u_status = 'in_progress_bitches';
+// 		filedCases.update();
+// 		gs.info('update a case!');
+// 	}
+}
+]]></script>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-20 19:28:32</sys_created_on>
         <sys_id>6cdd677137b21300502a03a973990e95</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Remind Abitrators of active cases</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Move unplease Cases to In Progress</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sysauto_script_6cdd677137b21300502a03a973990e95</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-22 21:00:17</sys_updated_on>
+        <sys_updated_on>2018-06-25 17:21:00</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

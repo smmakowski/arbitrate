@@ -21,12 +21,12 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Deny Complaint</name>
-        <onclick>getConfirmation()</onclick>
+        <onclick>confirmDenial()</onclick>
         <order>100</order>
         <script><![CDATA[// client side confirmation
-function getConfirmation() {
+function confirmDenial() {
 	// askfor confirmation
-	var willAccept = confirm('By clicking this button, you deny part or all of the allegations set forth in the initial complaint. By Doing so you move this case into the Discussion Phase. Please note that by doing so you are risking a potentially more severe remdy than if you plead guildty');
+	var willAccept = confirm('By clicking this button, you deny part or all of the allegations set forth in the initial complaint. By Doing so you move this case into the Discussion Phase. Please note that by doing so you are risking a potentially more severe remdy than if you plead guilty');
 	// if retracts modify record and update with server-sdie
 	if (willAccept) {
 		gsftSubmit(null, g_form.getFormElement(), 'denyComplaint');
@@ -55,7 +55,7 @@ function changeRecord() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9cfb42d737b21300502a03a973990e08</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Deny Complaint</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -63,7 +63,7 @@ function changeRecord() {
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_action_9cfb42d737b21300502a03a973990e08</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 03:52:35</sys_updated_on>
+        <sys_updated_on>2018-06-25 19:43:08</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

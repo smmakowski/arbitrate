@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Cases" max_length="40" name="x_230726_arbitrate_cases" type="collection">
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Additional Details" max_length="500" name="u_additional_details" type="string"/>
         <element label="Arbitrator" max_length="32" name="u_arbitrator" read_only="true" reference="sys_user" type="reference"/>
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Complaintant" mandatory="true" max_length="32" name="u_complaintant" read_only="true" reference="sys_user" reference_qual="sys_id=javascript:gs.getUserID()^EQ" type="reference" use_dynamic_default="true" use_reference_qualifier="advanced"/>
-        <element label="Complaintant Email" max_length="50" name="u_complaintant_email" type="string"/>
+        <element label="Decision Deadline" max_length="40" name="u_decision_deadline" type="glide_date_time"/>
+        <element label="Discussion Deadline" max_length="40" name="u_discussion_deadline" type="glide_date_time"/>
         <element label="NeedIt Number" max_length="32" name="u_needit_number" reference="x_58872_needit_needit" reference_qual="sys_created_by=javascript:gs.getUserID()^ORu_requested_for=javascript:gs.getUserID()^EQ" type="reference" use_reference_qualifier="advanced"/>
         <element label="Offending Party" max_length="32" name="u_offending_party" reference="sys_user" reference_qual="user_name!=javascript.getUserID()^EQ" reference_qual_condition="user_name!=javascript.getUserID()^EQ" type="reference"/>
+        <element label="Plea Deadline" max_length="40" name="u_plea_deadline" type="glide_date_time"/>
         <element label="Short Description" mandatory="true" max_length="140" name="u_short_description" type="string"/>
         <element choice="3" default="filed" label="Status" max_length="40" name="u_status" read_only="true" type="choice">
             <choice>

@@ -27,7 +27,7 @@
 
 gs.info(caseNum);
 
-var url = 'x_230726_arbitrate_discussions_list.do?XMLsysparm_query=u_case_number=' + caseNum; // parse the url
+var url = 'x_230726_arbitrate_discussions_list.do?sysparm_query=u_case_number=' + caseNum; // parse the url
 
 action.setRedirectURL(url);
 
@@ -43,7 +43,7 @@ action.setRedirectURL(url);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fdfcdda237321300502a03a973990eb3</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>View related discussion</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -51,7 +51,7 @@ action.setRedirectURL(url);
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_action_fdfcdda237321300502a03a973990eb3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 03:42:51</sys_updated_on>
+        <sys_updated_on>2018-06-26 02:17:19</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

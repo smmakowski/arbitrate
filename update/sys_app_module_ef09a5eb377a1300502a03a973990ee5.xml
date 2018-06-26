@@ -2,43 +2,43 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="ArbITrate">e51250880f321300475d8e8ce1050e8f</application>
+        <application/>
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_230726_arbitrate_cases">u_complaintant=javascript:gs.getUserID()^EQ<item endquery="false" field="u_complaintant" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+        <filter table="x_230726_arbitrate_cases">u_arbitrator=javascript:gs.getUserID()^EQ<item endquery="false" field="u_arbitrator" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
-        <hint>View all cases in where I am the Complaint</hint>
+        <hint>View all cases in which I am the Arbitrator</hint>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>My Complaints</mobile_title>
+        <mobile_title>Cases I am Arbitrating</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_230726_arbitrate_cases</name>
-        <order>200</order>
+        <order/>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_230726_arbitrate.user</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-19 15:52:21</sys_created_on>
+        <sys_created_on>2018-06-25 19:58:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>dda7fd6537721300502a03a973990e3c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Cases where I am Complaintant</sys_name>
+        <sys_id>ef09a5eb377a1300502a03a973990ee5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cases I am Arbitrating</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_app_module_dda7fd6537721300502a03a973990e3c</sys_update_name>
+        <sys_update_name>sys_app_module_ef09a5eb377a1300502a03a973990ee5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 19:58:28</sys_updated_on>
+        <sys_updated_on>2018-06-25 19:58:36</sys_updated_on>
         <timeline_page/>
-        <title>Cases where I am Complaintant</title>
+        <title>Cases I am Arbitrating</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

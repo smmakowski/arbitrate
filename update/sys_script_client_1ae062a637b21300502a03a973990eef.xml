@@ -12,7 +12,7 @@
         <order/>
         <script><![CDATA[function onLoad() {
 	var currentCase = g_scratchpad.currentCase;
-	alert(currentCase);
+	//alert(currentCase);
 	g_form.setValue('u_case_number', currentCase);
 	g_form.setReadOnly('u_case_number', true);
 	//Type appropriate comment here, and begin script below
@@ -23,7 +23,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1ae062a637b21300502a03a973990eef</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>getCaseFromScratchPad</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -31,7 +31,7 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_client_1ae062a637b21300502a03a973990eef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-22 22:00:05</sys_updated_on>
+        <sys_updated_on>2018-06-26 02:18:47</sys_updated_on>
         <table>x_230726_arbitrate_discussions</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

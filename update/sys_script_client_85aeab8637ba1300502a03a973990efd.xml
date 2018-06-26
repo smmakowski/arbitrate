@@ -22,7 +22,7 @@
 }
 
 function populateOffender(response) {
-	alert('okay... the thing went through');
+	//alert('okay... the thing went through');
 	var userFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
 	//alert(userFromScriptInclude);
 	g_form.setValue('u_offending_party', userFromScriptInclude);
@@ -34,7 +34,7 @@ function populateOffender(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>85aeab8637ba1300502a03a973990efd</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>populateOffenderFromNeedIt</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -42,7 +42,7 @@ function populateOffender(response) {
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_client_85aeab8637ba1300502a03a973990efd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-21 19:12:16</sys_updated_on>
+        <sys_updated_on>2018-06-26 02:19:03</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

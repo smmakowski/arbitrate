@@ -21,10 +21,10 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Accept Responsibility</name>
-        <onclick>getConfirmation()</onclick>
+        <onclick>confirmAcceptance()</onclick>
         <order>500</order>
         <script><![CDATA[// client side confirmation
-function getConfirmation() {
+function confirmAcceptance() {
 	// askfor confirmation
 	var willAccept = confirm('By clicking this button, you accept responsibility for your actions in the below case.\nBy doing so you end the current Arbitration Process, and your arbitrator will decide the appropriate remedy. You also surrender ay right to an appeal should that functionality be implemented.');
 	// if retracts modify record and update with server-sdie
@@ -55,7 +55,7 @@ function changeRecord() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e1e6c50237761300502a03a973990ee1</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Accept Responsibility</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -63,7 +63,7 @@ function changeRecord() {
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_action_e1e6c50237761300502a03a973990ee1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 03:40:52</sys_updated_on>
+        <sys_updated_on>2018-06-25 19:42:27</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

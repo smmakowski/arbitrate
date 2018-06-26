@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_ui_section caption="Deadlines" section_id="ef68ef2337be1300502a03a973990ef7" sys_domain="global" table="x_230726_arbitrate_cases" version="3" view="">
+    <sys_ui_section caption="Deadlines" section_id="63db51fb37725300502a03a973990eb6" sys_domain="global" table="x_230726_arbitrate_cases" version="3" view="View_with_deadlines">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_plea_deadline</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-26 05:11:55</sys_created_on>
-            <sys_id>b768636337be1300502a03a973990e94</sys_id>
+            <sys_created_on>2018-06-26 13:36:16</sys_created_on>
+            <sys_id>3fdb91fb37725300502a03a973990e4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Deadlines" display_value="Deadlines" name="x_230726_arbitrate_cases" sys_domain="global" view="Default view">ef68ef2337be1300502a03a973990ef7</sys_ui_section>
+            <sys_ui_section caption="Deadlines" display_value="Deadlines" name="x_230726_arbitrate_cases" sys_domain="global" view="1bdb51fb37725300502a03a973990eb1">63db51fb37725300502a03a973990eb6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-26 05:11:55</sys_updated_on>
+            <sys_updated_on>2018-06-26 13:36:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>u_decision_deadline</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-26 05:11:55</sys_created_on>
-            <sys_id>3f68636337be1300502a03a973990e94</sys_id>
+            <sys_created_on>2018-06-26 13:36:16</sys_created_on>
+            <sys_id>bfdb91fb37725300502a03a973990e4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Deadlines" display_value="Deadlines" name="x_230726_arbitrate_cases" sys_domain="global" view="Default view">ef68ef2337be1300502a03a973990ef7</sys_ui_section>
+            <sys_ui_section caption="Deadlines" display_value="Deadlines" name="x_230726_arbitrate_cases" sys_domain="global" view="1bdb51fb37725300502a03a973990eb1">63db51fb37725300502a03a973990eb6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-26 05:11:55</sys_updated_on>
+            <sys_updated_on>2018-06-26 13:36:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>u_discussion_deadline</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-26 05:11:55</sys_created_on>
-            <sys_id>bf68636337be1300502a03a973990e94</sys_id>
+            <sys_created_on>2018-06-26 13:36:16</sys_created_on>
+            <sys_id>33db91fb37725300502a03a973990e4b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Deadlines" display_value="Deadlines" name="x_230726_arbitrate_cases" sys_domain="global" view="Default view">ef68ef2337be1300502a03a973990ef7</sys_ui_section>
+            <sys_ui_section caption="Deadlines" display_value="Deadlines" name="x_230726_arbitrate_cases" sys_domain="global" view="1bdb51fb37725300502a03a973990eb1">63db51fb37725300502a03a973990eb6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-26 05:11:55</sys_updated_on>
+            <sys_updated_on>2018-06-26 13:36:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -50,22 +50,22 @@
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-26 05:11:54</sys_created_on>
+            <sys_created_on>2018-06-26 13:36:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ef68ef2337be1300502a03a973990ef7</sys_id>
+            <sys_id>63db51fb37725300502a03a973990eb6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Deadlines</sys_name>
             <sys_overrides/>
             <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
             <sys_policy/>
             <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-            <sys_update_name>sys_ui_section_ef68ef2337be1300502a03a973990ef7</sys_update_name>
+            <sys_update_name>sys_ui_section_63db51fb37725300502a03a973990eb6</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-26 05:11:54</sys_updated_on>
+            <sys_updated_on>2018-06-26 13:36:15</sys_updated_on>
             <sys_user/>
             <title>false</title>
-            <view display_value="Default view" name="NULL">Default view</view>
+            <view display_value="View with deadlines" name="View_with_deadlines">1bdb51fb37725300502a03a973990eb1</view>
             <view_name/>
         </sys_ui_section>
     </sys_ui_section>

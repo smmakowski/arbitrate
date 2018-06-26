@@ -134,6 +134,25 @@
             <sys_updated_on>2018-06-25 03:20:03</sys_updated_on>
             <value>retracted</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Undecided - Awaiting admin review</label>
+            <language>en</language>
+            <name>x_230726_arbitrate_cases</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-26 14:33:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0d861b337b25300502a03a973990ed2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-26 14:33:11</sys_updated_on>
+            <value>undecided</value>
+        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_status</element>
             <name>x_230726_arbitrate_cases</name>

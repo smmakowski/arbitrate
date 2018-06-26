@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sysevent_in_email_action">
     <sysevent_in_email_action action="INSERT_OR_UPDATE">
-        <action>reply_email</action>
-        <active>false</active>
+        <action>record_action</action>
+        <active>true</active>
         <assignment_operator/>
         <condition_script/>
         <description/>
         <event_name>email.read</event_name>
-        <filter_condition table="sys_email">subjectLIKEARB0000^bodyLIKERESPONSIBLE^ORbodyLIKENOT RESPONSIBLE^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="ARB0000"/>
-            <item endquery="false" field="body" goto="false" newquery="false" operator="LIKE" or="false" value="RESPONSIBLE"/>
-            <item endquery="false" field="body" goto="false" newquery="false" operator="LIKE" or="true" value="NOT RESPONSIBLE"/>
+        <filter_condition table="sys_email">subjectLIKECase no. ARB^subjectLIKEComplaint Filed (PLEA REQUIRED)^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="Case no. ARB"/>
+            <item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="Complaint Filed (PLEA REQUIRED)"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <from/>
-        <name>Set Plea</name>
+        <name>Process Plea</name>
         <order>100</order>
         <reply_email/>
         <required_roles/>
         <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
-
-	// Implement email action here
+	gs.info('record is' + current.number);
+	if (current.getValue('u_status') === 'filed') {
+		var target;
+		if (email.body_text.indexOf('I PLEA RESPONSIBLE') === 0) {
+			gs.info('RESPONSIBLE PLEA');
+			target = 'accepted';
+		} else if (email.body_text.indexOf('I PLEA NOT RESPONSIBLE') === 0) {
+			gs.info('NOT RESPONSIBLE PLEA');
+			target = 'in_progress';
+		}
+		// proceed if one of two is selected
+		if (target) {
+			gs.info('Target is ' + target);
+			var emailIsOffenders = false;
+			// validate sender is offender
+			var emailRecord = new GlideRecord('sys_user');
+			emailRecord.addQuery('email', email.from);
+			emailRecord.query();
+			gs.info('successful query!');
+			while (emailRecord.next()) {
+				if (emailRecord.getValue('sys_id') === current.getValue('u_offending_party')) {
+					gs.info('Found the Offender!');
+					emailIsOffenders = true;
+				}
+			}
+			
+			if (emailIsOffenders) {
+				current.u_status = target;
+				current.update();
+				gs.info('We Did IT');
+			}
+		}
+	}
 
 })(current, event, email, logger, classifier);]]></script>
         <stop_processing>false</stop_processing>
@@ -29,16 +59,16 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9538ba67373e1300502a03a973990e8a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Set Plea</sys_name>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Process Plea</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sysevent_in_email_action_9538ba67373e1300502a03a973990e8a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 03:25:37</sys_updated_on>
-        <table/>
+        <sys_updated_on>2018-06-26 21:48:33</sys_updated_on>
+        <table>x_230726_arbitrate_cases</table>
         <template/>
         <type>reply</type>
     </sysevent_in_email_action>

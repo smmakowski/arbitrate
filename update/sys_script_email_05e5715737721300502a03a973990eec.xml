@@ -4,8 +4,8 @@
         <name>x_230726_arbitrate_cases_script_1</name>
         <new_lines_to_html>false</new_lines_to_html>
         <script><![CDATA[if (gs.getUserID() === current.u_offending_party) {
-template.print('You are the offending party in this action' You have three days (72 hours from the filing of the complaint to submit a plea. You may plea either \'Accept' or 'Deny\'. If you accept, then your arbitrator will determine an appropriate remedy. If you deny then this case will enter the \'Information Phase\', and you will be able to discuss your position with your arbitrator and the complaintant. Please be aware that if you do not please either way, then you will automatically enter a plea of \'Deny\'.');
-} else if (gs.getUserID() === 'current.u_arbitrator' {
+template.print('You are the offending party in this action You have three days (72 hours from the filing of the complaint to submit a plea. You may plea either \'Accept\' or \'Deny\'. If you accept, then your arbitrator will determine an appropriate remedy. If you deny then this case will enter the \'Information Phase\', and you will be able to discuss your position with your arbitrator and the complaintant. Please be aware that if you do not please either way, then you will automatically enter a plea of \'Deny\'.');
+} else if (gs.getUserID() === current.u_arbitrator) {
  template.print('You are the arbitrator in this matter. You will be notified when the offending party has plead to the allegations. Please check the case and relevant discussions regularly, and review previous decisions under the \'Cases I am Arbitrating\' module');
 } else {
 template.print('Your complaint has been successflly filed. Please await the plea of offending party.');
@@ -14,13 +14,13 @@ template.print('Your complaint has been successflly filed. Please await the plea
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 02:13:00</sys_created_on>
         <sys_id>05e5715737721300502a03a973990eec</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_230726_arbitrate_cases_script_1</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_email_05e5715737721300502a03a973990eec</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 02:13:00</sys_updated_on>
+        <sys_updated_on>2018-06-26 16:41:41</sys_updated_on>
     </sys_script_email>
 </record_update>

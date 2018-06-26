@@ -38,10 +38,13 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<div>To all parties involved:</div>
+        <message_html><![CDATA[<div>To the offending party in Case No. ${number}</div>
 <div>&nbsp;</div>
+<div>A complaint has been filed against you in the above subject matter. You have 3 days to enter a plea of 'Responsible' or 'Not Responsible'.</div>
 <div>&nbsp;</div>
-<div>A complaint has been filed, and the below ArbITrate case has been opened. At this time the offending party will have 3 days to plea either 'RESPONSIBLE' or 'NOT RESPONSIBLE'. You will receive further instructions when this occurs.</div>
+<div>You can plea via two methods. First, you can go to this case in the instance, or alternatively you can reply directly to this email. In the body, you must start with the words "I PLEA" (all caps), and then add 'RESPONSIBLE" (all caps) or "NOTRESPONSIBLE" (all caps no spaces). For example, if you plea 'r not esponsible', respond with (no quotes)...</div>
+<div>&nbsp;</div>
+<div>'I PLEA NOTRESPONSIBLE'</div>
 <div>&nbsp;</div>
 <div>The details for this matter are below.</div>
 <div>&nbsp;</div>
@@ -56,37 +59,39 @@
 <div>Best Regards,</div>
 <div>&nbsp;</div>
 <div>The Ar-BOT-trator</div>
-<div>&nbsp;</div>]]></message_html>
+<div>&nbsp;</div>
+<div>CaseRef:${number}</div>
+<div>OffRef:${u_offending_party.sys_id}</div>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Complaint filed</name>
+        <name>Plea Required</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>u_complaintant,u_arbitrator</recipient_fields>
+        <recipient_fields>u_offending_party</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Case No. ${number}; Complaint Filed</subject>
+        <subject>Case no. ${number}; Complaint Filed (PLEA REQUIRED)</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-21 15:18:48</sys_created_on>
+        <sys_created_on>2018-06-26 16:51:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3f13c81637fa1300502a03a973990ec6</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_name>Complaint filed</sys_name>
+        <sys_id>8fb7463737f25300502a03a973990eb4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Plea Required</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sysevent_email_action_3f13c81637fa1300502a03a973990ec6</sys_update_name>
+        <sys_update_name>sysevent_email_action_8fb7463737f25300502a03a973990eb4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 16:58:43</sys_updated_on>
+        <sys_updated_on>2018-06-26 16:56:31</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

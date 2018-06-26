@@ -4,7 +4,7 @@
         <active>true</active>
         <condition/>
         <conditional>false</conditional>
-        <name>Move unplead Cases to In Progress</name>
+        <name>Move deadline cases Along</name>
         <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
@@ -15,39 +15,51 @@
         <run_type>daily</run_type>
         <script><![CDATA[// get all case that are currently filed
 var now = new GlideDateTime();
+var deadline;
+var target;
 gs.info('now is ' + now.getDate() + now.getTime());
-
-var filedCases = new GlideRecord('x_230726_arbitrate_cases');
-filedCases.addQuery('u_status', 'filed');
-filedCases.query();
+var i = 0;
+var cases = new GlideRecord('x_230726_arbitrate_cases');
+cases.addQuery('u_status=filed^ORu_status=in_progress^ORu_status=awaiting_decision');
+cases.query();
 // for all filed records
-while(filedCases.next()) {
-	var deadline = new GlideDateTime(filedCases.sys_created_on);
-	gs.info(filedCases.number + ' Before Adjustment ' + deadline.getDate() + deadline.getTime());
-	deadline.addDaysLocalTime(3);
-	gs.info(filedCases.number + ' After Adjustment to Dealine ' + deadline.getDate() + deadline.getTime());
-	// if after deadline auto-update status
-	if (now.after(deadline)) {
-		filedCases.u_status = 'in_progress';
-		filedCases.update();
-		gs.info('update a case!');
+gs.info('query sucessful');
+while(cases.next()) {
+	// depending on what the current deadline is 
+	if (cases.getValue('u_status') === 'filed') {
+		deadline = new GlideDateTime(cases.getValue('u_plea_deadline'));
+		target = 'in_progress';
+	} else if (cases.getValue('u_status') === 'in_progress') {
+		deadline = new GlideDateTime(cases.getValue('u_discussion_deadline'));
+		target = 'awaiting_decision';
+	} else if (cases.getValue('u_status') === 'awaiting_decision') {
+		deadline = new GlideDateTime(cases.getValue('u_decision_deadline'));
+		target = 'undecided';
 	}
+	gs.info(deadline.getDate() + ' ' + target);
+	if (true) {
+		cases.u_status = target;
+		cases.update();
+		gs.info('case updated');
+	}
+	deadline = null;
+	i++;
 }
 
-gs.info('Ev');
+gs.info('Ev' + i);
 ]]></script>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-20 19:28:32</sys_created_on>
         <sys_id>6cdd677137b21300502a03a973990e95</sys_id>
-        <sys_mod_count>40</sys_mod_count>
-        <sys_name>Move unplead Cases to In Progress</sys_name>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>Move deadline cases Along</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sysauto_script_6cdd677137b21300502a03a973990e95</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 19:10:20</sys_updated_on>
+        <sys_updated_on>2018-06-26 04:19:52</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

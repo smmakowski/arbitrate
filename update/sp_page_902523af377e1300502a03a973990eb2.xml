@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>other</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>copy_of_approvals_1</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-26 04:57:29</sys_created_on>
+        <sys_id>902523af377e1300502a03a973990eb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>copy_of_approvals_1</sys_name>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sp_page_902523af377e1300502a03a973990eb2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-26 04:57:29</sys_updated_on>
+        <title>Copy of Approvals (1)</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=902523af377e1300502a03a973990eb2"/>
+</record_update>

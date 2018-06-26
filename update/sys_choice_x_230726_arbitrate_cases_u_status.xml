@@ -53,10 +53,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>cca0be6937f21300502a03a973990e77</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 03:20:53</sys_updated_on>
-            <value>awaiting_decicision</value>
+            <sys_updated_on>2018-06-26 04:21:02</sys_updated_on>
+            <value>awaiting_decision</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

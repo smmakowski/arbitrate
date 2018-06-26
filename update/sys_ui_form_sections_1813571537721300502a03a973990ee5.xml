@@ -29,6 +29,20 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-06-19 03:52:14</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-26 05:11:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb68636337be1300502a03a973990e7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_230726_arbitrate_cases" name="x_230726_arbitrate_cases" sys_domain="global" view="Default view">1813571537721300502a03a973990ee5</sys_ui_form>
+            <sys_ui_section caption="Deadlines" display_value="Deadlines" name="x_230726_arbitrate_cases" sys_domain="global" view="Default view">ef68ef2337be1300502a03a973990ef7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-26 05:11:54</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_230726_arbitrate_cases</name>
             <roles/>

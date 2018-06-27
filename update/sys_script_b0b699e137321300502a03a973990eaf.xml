@@ -29,65 +29,41 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	//gs.info('Executing rule');
-	//gs.info('current arbitrator is ' + current.u_arbitrator);
-	var count = {}; // setup empty count object
+	// gs.info('Executing rule'); // get a list of all arbitrators
+	var arbitratorList = []; // setup empty count object
 	var grUserRoles = new GlideRecord('sys_user_has_role');
 	grUserRoles.addQuery('role', 'afc7904c0f321300475d8e8ce1050ec8');// arbitrate.arbitrator role
-	// 3Dafc7904c0f321300475d8e8ce1050ec8
-	// 282bf1fac6112285017366cb5f867469
 	grUserRoles.query();
-	//gs.info('Query and string success');
+	// gs.info('Query and string success');
 	while (grUserRoles.next()) {
-		// get user reference
 		var user = grUserRoles.user + '';
-		//num++;
-		//gs.info(grUserRoles.user + '');
-		// if not in the count add it to the count with 0 
-		if (!count[user]) {
-			count[user] = 0;
-		}
+		arbitratorList.push(user); // add user to list
 	}
-// 		gs.info('the number of keys in count is' + Object.keys(count).length);
-
-	//create cases record query for 'in progress' cases
-	var caseRecords = new GlideRecord('x_230726_arbitrate_cases');
-	//caseRecords.addQuery('u_status=filed^ORu_status=in_progress^ORu_status=awaiting_decision); // where case is currently in progress
-	/*
-		REFACTOR NOTES!
-		QUERY THE TABLE ADDING QUERIES FOR U_ARBITRATOR
-		LOOK AT DOCS FOR COUNT() ;
-	
-	*/
-	
-	
-	caseRecords.query();
-	// init least variables at high amount
-	// iterate an increment if arbitrator already on a case
-	//gs.info('number of queries found = ' + caseRecords.getRowCount());
-	while (caseRecords.next()) {
-		var caseArbitrator = caseRecords.u_arbitrator + '';
-		if (count[caseArbitrator] >= 0) {
-			count[caseArbitrator]++;
-		}
-	}
-	//gs.info('madeit')
+	gs.info('GOt a litst of Arbitrators!'  + arbitratorList.length);
+	// init highest values to find lowest
 	var leastCount = 1000000;
 	var leastUser = '';
-	// iterate through keys in count
-	for (var userRef in count) {
-		// if count is less than current least
-		if (count[userRef] < leastCount) {
-			// reassign least count and user
-			//gs.info('current user is ' + userRef;
-			leastUser = userRef;
-			leastCount = count[userRef];
-		}
-	}
-	//gs.info('least user is ' + leastUser);
-	g_scratchpad.assignedArbitrator = leastUser;
+	//create cases record query for 'in progress' cases
 	
-	//gs.info('Scratchpad is '+ g_scratchpad.assignedArbitrator);
+	// for each 
+	
+	arbitratorList.forEach(function(currArb) {
+		gs.info('attempting count for ARBITRAOTR' + currArb);
+		var caseRecords = new GlideRecord('x_230726_arbitrate_cases');
+		caseRecords.addQuery('u_arbitrator', currArb);
+		caseRecords.addQuery('u_status=filed^ORu_status=in_progress^ORu_status=awaiting_decision');
+		caseRecords.query();
+		
+		var count = caseRecords.getRowCount();
+		gs.info('ACTIVE CASES HAVE BEEN QUERIED FOUND ' + count);
+		if (count < leastCount) {
+			leastUser = currArb;
+			leastCount = count;
+		}
+	});
+	
+	g_scratchpad.assignedArbitrator = leastUser;
+	gs.info('Scratchpad is '+ g_scratchpad.assignedArbitrator);
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -95,7 +71,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b0b699e137321300502a03a973990eaf</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>selectArbitrator</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -103,7 +79,7 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_b0b699e137321300502a03a973990eaf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 20:59:01</sys_updated_on>
+        <sys_updated_on>2018-06-27 20:32:19</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>

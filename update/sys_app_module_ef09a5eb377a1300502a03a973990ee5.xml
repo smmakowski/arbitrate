@@ -21,14 +21,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_232875_complaint.arbitrator</roles>
+        <roles>x_230726_arbitrate.arbitrator</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 19:58:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ef09a5eb377a1300502a03a973990ee5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Cases I am Arbitrating</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_app_module_ef09a5eb377a1300502a03a973990ee5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 23:25:55</sys_updated_on>
+        <sys_updated_on>2018-06-27 14:49:55</sys_updated_on>
         <timeline_page/>
         <title>Cases I am Arbitrating</title>
         <uncancelable>false</uncancelable>

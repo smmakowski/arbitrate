@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="ArbITrate">e51250880f321300475d8e8ce1050e8f</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint>View current Strikes for arbitrators</hint>
+        <homepage/>
+        <image/>
+        <link_type>REPORT</link_type>
+        <map_page/>
+        <mobile_title>Strikes</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_230726_arbitrate_strikes</name>
+        <order>800</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report display_value="Arbitrator Strikes">f299fa4c374f5300502a03a973990e44</report>
+        <roles>x_230726_arbitrate.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-27 14:53:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3627720c374f5300502a03a973990ef0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Arbitrator Strikes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sys_app_module_3627720c374f5300502a03a973990ef0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-27 15:38:31</sys_updated_on>
+        <timeline_page/>
+        <title>Arbitrator Strikes</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

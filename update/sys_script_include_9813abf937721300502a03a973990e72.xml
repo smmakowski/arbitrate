@@ -20,16 +20,16 @@ getGotQuoteFromRest.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 // 			req.setHTTPTimeout(10000);
 			
 			res = req.execute(); // execute the request
-			gs.info('request is execupte');
+			//gs.info('request is execupte');
 			responseBody = res.haveError() ? res.getErrorMessage() : res.getBody(); // respone Body is err message or body
-			gs.info(responseBody);
+			//gs.info(responseBody);
 			
 			responseBody = JSON.parse(responseBody);
 			quote += 'QUOTE OF THE DAY: "' + responseBody.quote + '"' + ' - ' + responseBody.character;
 			gs.addInfoMessage(responseBody.quote + '\n-' + responseBody.character);
 			return 'success';
 		} catch (err) {
-			gs.info('Error Trying to retrieve a quote from the API');
+			//gs.info('Error Trying to retrieve a quote from the API');
 			quote ='QUOTE OF THE DAY: "I am the Senate" - Emperor Palpatine';
 			gs.addInfoMessage(quote);
 			return "fail";
@@ -42,13 +42,13 @@ getGotQuoteFromRest.prototype = Object.extendsObject(global.AbstractAjaxProcesso
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-20 18:29:24</sys_created_on>
         <sys_id>9813abf937721300502a03a973990e72</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>getGotQuoteFromRest</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_include_9813abf937721300502a03a973990e72</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 02:20:46</sys_updated_on>
+        <sys_updated_on>2018-06-27 16:23:02</sys_updated_on>
     </sys_script_include>
 </record_update>

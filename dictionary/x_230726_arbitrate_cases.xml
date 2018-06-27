@@ -7,7 +7,6 @@
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Complaintant" mandatory="true" max_length="32" name="u_complaintant" read_only="true" reference="sys_user" reference_qual="sys_id=javascript:gs.getUserID()^EQ" type="reference" use_dynamic_default="true" use_reference_qualifier="advanced"/>
         <element label="Decision Deadline" max_length="40" name="u_decision_deadline" read_only="true" type="glide_date_time"/>
         <element label="Discussion Deadline" max_length="40" name="u_discussion_deadline" read_only="true" type="glide_date_time"/>
-        <element label="History" max_length="4000" name="u_history" read_only="true" type="simple_name_values"/>
         <element label="NeedIt Number" max_length="32" name="u_needit_number" reference="x_58872_needit_needit" reference_qual="sys_created_by=javascript:gs.getUserID()^ORu_requested_for=javascript:gs.getUserID()^EQ" type="reference" use_reference_qualifier="advanced"/>
         <element label="Offending Party" max_length="32" name="u_offending_party" reference="sys_user" reference_qual="user_name!=javascript.getUserID()^EQ" reference_qual_condition="user_name!=javascript.getUserID()^EQ" type="reference"/>
         <element label="Plea Deadline" max_length="40" name="u_plea_deadline" read_only="true" type="glide_date_time"/>

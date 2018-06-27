@@ -5,13 +5,13 @@
         <applies_extended>false</applies_extended>
         <condition/>
         <description>validates that subject is not 'choose' upon submit</description>
-        <field>u_abitrator</field>
+        <field>u_additional_details</field>
         <global>true</global>
         <messages/>
         <name>isSubjectChosen</name>
         <order/>
         <script><![CDATA[function onSubmit() {
-   if (g_form.getValue('u_subject') == 'choose') {
+   if (g_form.getValue('u_subject') === 'choose') {
 	   g_form.addErrorMessage('You must choose a subject and fill out additonal required fields in order to submit!');
 	   
 	   return false; // cancel submission
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>09247d2537721300502a03a973990ef5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>isSubjectChosen</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_client_09247d2537721300502a03a973990ef5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-19 15:43:03</sys_updated_on>
+        <sys_updated_on>2018-06-26 23:56:06</sys_updated_on>
         <table>x_230726_arbitrate_cases</table>
         <type>onSubmit</type>
         <ui_type>10</ui_type>

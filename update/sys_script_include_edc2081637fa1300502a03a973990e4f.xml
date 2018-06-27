@@ -18,7 +18,12 @@ processDecision.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		dr.u_complaintant = this.getParameter('sysparm_complaintant');
 		dr.u_offending_party = this.getParameter('sysparm_offender');
 		dr.u_reasoning = this.getParameter('sysparm_reason');
-		dr.u_additional_details = this.getParameter('sysparm_additional');
+		if (this.getParameter('sysparm_adminIntervention') === 'true') {
+			dr.u_additional_details = this.getParameter('sysparm_additional');
+		} else {
+			dr.u_additional_details = (this.getParameter('sysparm_additional') + '\n(DECISION MADE BY ArbITrate ADMIN)!');
+		}
+		
 		dr.u_offender_is_responsible = this.getParameter('sysparm_decision');
 		var newDec = dr.insert();	
 		
@@ -36,13 +41,13 @@ processDecision.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-21 15:17:01</sys_created_on>
         <sys_id>edc2081637fa1300502a03a973990e4f</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>processDecision</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_include_edc2081637fa1300502a03a973990e4f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-21 20:20:03</sys_updated_on>
+        <sys_updated_on>2018-06-27 03:10:48</sys_updated_on>
     </sys_script_include>
 </record_update>

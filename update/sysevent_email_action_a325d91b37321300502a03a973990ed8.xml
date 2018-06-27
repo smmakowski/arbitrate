@@ -8,7 +8,7 @@
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_230726_arbitrate_cases</collection>
-        <condition table="x_230726_arbitrate_cases">u_statusIN-4,-2^EQ<item endquery="false" field="u_status" goto="false" newquery="false" operator="IN" or="false" value="-4,-2"/>
+        <condition table="x_230726_arbitrate_cases">u_statusIN^EQ<item endquery="false" field="u_status" goto="false" newquery="false" operator="IN" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -40,9 +40,7 @@
         <message/>
         <message_html><![CDATA[<div>To all parties involved:</div>
 <div>&nbsp;</div>
-<div>${u_arbitrator}. A decision has been made in the case below.</div>
-<div>&nbsp;</div>
-<div>${mail_script:x_230726_arbitrate_cases_script_2}</div>
+<div>The Arbitrator in this case has made a decision in favor of the Offending Party, the Offending Party is deemed 'Not Responsible' for the actions alleged in the complaint, and any other issues that were brought up during the discussion process. This concludes the case.</div>
 <div>&nbsp;</div>
 <div>The details for this matter are below.</div>
 <div>&nbsp;</div>
@@ -65,7 +63,7 @@
         <push_message_only>false</push_message_only>
         <recipient_fields>u_complaintant,u_offending_party,u_arbitrator</recipient_fields>
         <recipient_groups/>
-        <recipient_users>clubofone@mailinator.com</recipient_users>
+        <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
@@ -78,7 +76,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a325d91b37321300502a03a973990ed8</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Case decision favor Offending Party</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -86,7 +84,7 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sysevent_email_action_a325d91b37321300502a03a973990ed8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 02:21:15</sys_updated_on>
+        <sys_updated_on>2018-06-27 01:01:18</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

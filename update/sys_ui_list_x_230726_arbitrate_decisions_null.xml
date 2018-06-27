@@ -4,17 +4,122 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">848bf61537321300502a03a973990e4c</list_id>
+            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef34773337f65300502a03a973990e7d</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-19 02:09:16</sys_created_on>
-            <sys_id>0c8bf61537321300502a03a973990e4c</sys_id>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
+            <sys_id>6734773337f65300502a03a973990e7e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-19 02:09:16</sys_updated_on>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_case_number</element>
+            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef34773337f65300502a03a973990e7d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
+            <sys_id>e734773337f65300502a03a973990e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_complaintant</element>
+            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef34773337f65300502a03a973990e7d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
+            <sys_id>6b34773337f65300502a03a973990e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_offending_party</element>
+            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef34773337f65300502a03a973990e7d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
+            <sys_id>eb34773337f65300502a03a973990e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_arbitrator</element>
+            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef34773337f65300502a03a973990e7d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
+            <sys_id>6f34773337f65300502a03a973990e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_offender_is_responsible</element>
+            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef34773337f65300502a03a973990e7d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
+            <sys_id>ef34773337f65300502a03a973990e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_reasoning</element>
+            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef34773337f65300502a03a973990e7d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
+            <sys_id>6334773337f65300502a03a973990e7f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_additional_details</element>
+            <list_id display_value="x_230726_arbitrate_decisions" element="NULL" name="x_230726_arbitrate_decisions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef34773337f65300502a03a973990e7d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
+            <sys_id>e334773337f65300502a03a973990e7f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -28,10 +133,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-19 02:09:16</sys_created_on>
+            <sys_created_on>2018-06-27 00:41:59</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>848bf61537321300502a03a973990e4c</sys_id>
+            <sys_id>ef34773337f65300502a03a973990e7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_230726_arbitrate_decisions</sys_name>
             <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -39,7 +144,7 @@
             <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
             <sys_update_name>sys_ui_list_x_230726_arbitrate_decisions_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-19 02:09:16</sys_updated_on>
+            <sys_updated_on>2018-06-27 00:41:59</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

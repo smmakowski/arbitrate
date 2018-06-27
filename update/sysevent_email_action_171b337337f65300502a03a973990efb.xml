@@ -8,7 +8,7 @@
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_230726_arbitrate_cases</collection>
-        <condition table="x_230726_arbitrate_cases">u_status=awaiting_decision^EQ<item endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="awaiting_decision"/>
+        <condition table="x_230726_arbitrate_cases">u_status=undecided^EQ<item endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="undecided"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -38,12 +38,9 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<div>To all parties involved:</div>
-<div>&nbsp;</div>
-<div>The discussion period for this case has ended, either by agreement, or exceeding the deadine, and is now awaiting judgment from the arbitrator. you will receive notification when a decision has/or has not been made.</div>
-<div>&nbsp;</div>
-<div>The details for this matter are below.</div>
-<div>&nbsp;</div>
+        <message_html><![CDATA[<p>To all parties in this case and all admins,</p>
+<p>No decision has been reached in the below case. IF you are an administrator please review the case, and render a decision.</p>
+<p>The case is below:</p>
 <div>Number: ${number}</div>
 <div>Complaintant: ${u_complaintant.name}</div>
 <div>Offending Party: ${u_offending_party.name}</div>
@@ -54,37 +51,37 @@
 <div>&nbsp;</div>
 <div>Best Regards,</div>
 <div>&nbsp;</div>
-<div>The Ar-BOT-trator</div>]]></message_html>
+<div>The Ar-BOT-rator</div>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Case Awaiting Decision</name>
+        <name>No Decision Made</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields>u_complaintant,u_offending_party,u_arbitrator</recipient_fields>
-        <recipient_groups/>
+        <recipient_groups name="ArbITrate Admins">da83f044374b5300502a03a973990e92</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Case No. ${number}; Case discussion has ended</subject>
+        <subject>Case No. ${number}; Non-Decision</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-25 02:52:53</sys_created_on>
+        <sys_created_on>2018-06-27 01:15:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>74ddb95f37721300502a03a973990ead</sys_id>
+        <sys_id>171b337337f65300502a03a973990efb</sys_id>
         <sys_mod_count>3</sys_mod_count>
-        <sys_name>Case Awaiting Decision</sys_name>
+        <sys_name>No Decision Made</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sysevent_email_action_74ddb95f37721300502a03a973990ead</sys_update_name>
+        <sys_update_name>sysevent_email_action_171b337337f65300502a03a973990efb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 23:30:09</sys_updated_on>
+        <sys_updated_on>2018-06-27 05:24:24</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

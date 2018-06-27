@@ -59,7 +59,7 @@
 <div>&nbsp;</div>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Complaint filed</name>
+        <name>Complaint filed (!Offending Party)</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -78,15 +78,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3f13c81637fa1300502a03a973990ec6</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_name>Complaint filed</sys_name>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Complaint filed (!Offending Party)</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sysevent_email_action_3f13c81637fa1300502a03a973990ec6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 16:58:43</sys_updated_on>
+        <sys_updated_on>2018-06-26 23:37:17</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

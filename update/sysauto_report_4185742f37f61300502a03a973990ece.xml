@@ -5,18 +5,19 @@
         <address_list>smmakowski@yahoo.com</address_list>
         <condition/>
         <conditional>false</conditional>
-        <group_list name="ArbITrate Judges">60fd87a937361300502a03a973990e20</group_list>
+        <group_list>60fd87a937361300502a03a973990e20,da83f044374b5300502a03a973990e92</group_list>
         <include_detail>false</include_detail>
         <include_with/>
-        <name>Stephen Makowski</name>
+        <name>Open cases reminder</name>
         <omit_if_no_records>false</omit_if_no_records>
         <output_type>PDF-landscape</output_type>
         <page_height_in_pixels>612</page_height_in_pixels>
         <page_size>Letter</page_size>
         <page_width_in_pixels>792</page_width_in_pixels>
         <report display_value="Open Cases Report">2b3538eb37f61300502a03a973990e16</report>
-        <report_body><![CDATA[<p>To all ArbITrate Judges,</p>
-<p>Please see the attached PDF containing a list of all cases that are still open. Please be sure to continue communication with all parties for your cases to ensure a timely dispostion.</p>
+        <report_body><![CDATA[<p>Dear ArbITrate Judges and Admins,</p>
+<p>Please see the attached PDF containing a list of all open cases. Please be sure to continue communication with all parties for your cases to ensure a timely disposition.</p>
+<p>Open cases are any case in which a decision has not been made.</p>
 <p>Best regards,</p>
 <p>The Ar-BOT-rator</p>]]></report_body>
         <report_title>RE: Weekly Arbitration Case Reminder</report_title>
@@ -32,14 +33,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 16:13:17</sys_created_on>
         <sys_id>4185742f37f61300502a03a973990ece</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Stephen Makowski</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Open cases reminder</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sysauto_report_4185742f37f61300502a03a973990ece</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 16:39:03</sys_updated_on>
+        <sys_updated_on>2018-06-27 05:31:21</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
         <user_list/>
         <zip>false</zip>

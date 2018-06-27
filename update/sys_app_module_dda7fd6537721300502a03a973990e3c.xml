@@ -28,17 +28,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dda7fd6537721300502a03a973990e3c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Cases where I am Complaintant</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Cases I am Arguing</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_app_module_dda7fd6537721300502a03a973990e3c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 19:58:28</sys_updated_on>
+        <sys_updated_on>2018-06-26 23:25:43</sys_updated_on>
         <timeline_page/>
-        <title>Cases where I am Complaintant</title>
+        <title>Cases I am Arguing</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

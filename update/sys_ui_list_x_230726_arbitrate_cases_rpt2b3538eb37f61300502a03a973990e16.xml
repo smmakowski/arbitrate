@@ -4,92 +4,92 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">47779163377a1300502a03a973990eb6</list_id>
+            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">0ed5f8c4374b5300502a03a973990ec4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 18:38:38</sys_created_on>
-            <sys_id>cb779163377a1300502a03a973990eb6</sys_id>
+            <sys_created_on>2018-06-27 05:28:37</sys_created_on>
+            <sys_id>82d5f8c4374b5300502a03a973990ec5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 18:38:38</sys_updated_on>
+            <sys_updated_on>2018-06-27 05:28:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_status</element>
-            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">47779163377a1300502a03a973990eb6</list_id>
+            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">0ed5f8c4374b5300502a03a973990ec4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 18:38:38</sys_created_on>
-            <sys_id>4f779163377a1300502a03a973990eb6</sys_id>
+            <sys_created_on>2018-06-27 05:28:37</sys_created_on>
+            <sys_id>06d5f8c4374b5300502a03a973990ec5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 18:38:38</sys_updated_on>
+            <sys_updated_on>2018-06-27 05:28:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_complaintant</element>
-            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">47779163377a1300502a03a973990eb6</list_id>
+            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">0ed5f8c4374b5300502a03a973990ec4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 18:38:38</sys_created_on>
-            <sys_id>cf779163377a1300502a03a973990eb6</sys_id>
+            <sys_created_on>2018-06-27 05:28:37</sys_created_on>
+            <sys_id>86d5f8c4374b5300502a03a973990ec5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 18:38:38</sys_updated_on>
+            <sys_updated_on>2018-06-27 05:28:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_offending_party</element>
-            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">47779163377a1300502a03a973990eb6</list_id>
+            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">0ed5f8c4374b5300502a03a973990ec4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 18:38:38</sys_created_on>
-            <sys_id>43779163377a1300502a03a973990eb7</sys_id>
+            <sys_created_on>2018-06-27 05:28:37</sys_created_on>
+            <sys_id>0ad5f8c4374b5300502a03a973990ec5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 18:38:38</sys_updated_on>
+            <sys_updated_on>2018-06-27 05:28:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_arbitrator</element>
-            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">47779163377a1300502a03a973990eb6</list_id>
+            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">0ed5f8c4374b5300502a03a973990ec4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 18:38:38</sys_created_on>
-            <sys_id>c3779163377a1300502a03a973990eb7</sys_id>
+            <sys_created_on>2018-06-27 05:28:37</sys_created_on>
+            <sys_id>8ad5f8c4374b5300502a03a973990ec5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 18:38:38</sys_updated_on>
+            <sys_updated_on>2018-06-27 05:28:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_short_description</element>
-            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">47779163377a1300502a03a973990eb6</list_id>
+            <list_id display_value="x_230726_arbitrate_cases" element="NULL" name="x_230726_arbitrate_cases" parent="NULL" relationship="NULL" sys_domain="global" view="ef3570af37f61300502a03a973990ecb">0ed5f8c4374b5300502a03a973990ec4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 18:38:38</sys_created_on>
-            <sys_id>47779163377a1300502a03a973990eb7</sys_id>
+            <sys_created_on>2018-06-27 05:28:37</sys_created_on>
+            <sys_id>0ed5f8c4374b5300502a03a973990ec5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 18:38:38</sys_updated_on>
+            <sys_updated_on>2018-06-27 05:28:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -103,10 +103,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 18:38:38</sys_created_on>
+            <sys_created_on>2018-06-27 05:28:37</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>47779163377a1300502a03a973990eb6</sys_id>
+            <sys_id>0ed5f8c4374b5300502a03a973990ec4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_230726_arbitrate_cases</sys_name>
             <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -114,7 +114,7 @@
             <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
             <sys_update_name>sys_ui_list_x_230726_arbitrate_cases_RPT2b3538eb37f61300502a03a973990e16</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 18:38:38</sys_updated_on>
+            <sys_updated_on>2018-06-27 05:28:37</sys_updated_on>
             <sys_user/>
             <view display_value="Rpt2b3538eb37f61300502a03a973990e16" name="RPT2b3538eb37f61300502a03a973990e16">ef3570af37f61300502a03a973990ecb</view>
             <view_name/>

@@ -7,17 +7,17 @@
         <roles/>
         <sys_class_name>sys_ui_view</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-26 13:36:15</sys_created_on>
-        <sys_id>1bdb51fb37725300502a03a973990eb1</sys_id>
+        <sys_created_on>2018-06-27 01:48:20</sys_created_on>
+        <sys_id>1b63440837c75300502a03a973990e8e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>View with deadlines</sys_name>
+        <sys_name>View_with_deadlines</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_ui_view_1bdb51fb37725300502a03a973990eb1</sys_update_name>
+        <sys_update_name>sys_ui_view_1b63440837c75300502a03a973990e8e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 13:36:15</sys_updated_on>
-        <title>View with deadlines</title>
+        <sys_updated_on>2018-06-27 01:48:20</sys_updated_on>
+        <title>View_with_deadlines</title>
         <user/>
     </sys_ui_view>
 </record_update>

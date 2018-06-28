@@ -34,7 +34,7 @@
 
 	// Add your code here
 	var deadline = new GlideDateTime();
-	deadline.addDaysLocalTime(7);
+	deadline.addDaysLocalTime(gs.getProperty('x_230726_arbitrate.discussionDeadline'));
 	current.u_discussion_deadline = deadline;
 	gs.info('DiscussionDeadline Set');
 
@@ -46,7 +46,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5f75fee3373e1300502a03a973990e23</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>setDiscussionDeadline</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -54,7 +54,7 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_script_5f75fee3373e1300502a03a973990e23</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 01:53:00</sys_updated_on>
+        <sys_updated_on>2018-06-28 02:29:28</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

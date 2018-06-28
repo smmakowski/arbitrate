@@ -12,14 +12,14 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_230726_arbitrate_cases</collection>
+        <collection>x_230726_arbitrate_strikes</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>setPleaDeadline</name>
+        <name>checkMaxStrikes</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,29 +29,50 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	// create new datetime obj based on record creation
-	var deadline = new GlideDateTime(current.sys_created_on);
-	deadline.addDaysLocalTime(gs.getProperty('x_230726_arbitrate.pleaDeadline')); // add deadline and set
-	current.u_plea_deadline = deadline;
-	gs.info('PleaDeadline Set');
+			// check strikes count
+			var strikeRecord = new GlideRecord('x_230726_arbitrate_strikes');
+			var arbId = current.getValue('u_arbitrator');
+			strikeRecord.addQuery('u_arbitrator', arbId);
+			strikeRecord.query();
+			var count = strikeRecord.getRowCount();
+			gs.info('got rowCount to test if over strikes');
+          // Add your code here
+			if (count >= gs.getProperty('x_230726_arbitrate.maxNumStrikes')) {
+				// get the name
+				var name = arbId;
+				var arbRecord = new GlideRecord('sys_user');
+				arbRecord.addQuery('sys_id', arbId);
+				arbRecord.query();
+				var userName;
+				gs.info('NAME QUERIED' + arbRecord.getRowCount());
+				while (arbRecord.next()) {
+					userName = arbRecord.getValue('user_name');
+				}
+				
+				gs.info(userName + ' IS AT THEIR LAST STRIKE!');
+				// trigger event with
+				gs.eventQueue('x_230726_arbitrate.arbitratorMaxStrikes',current, userName, count.toString());
+				gs.info('STRIKES EVENT TRIGGERD');
+			}
+			gs.info('STRIKES NOT QUITE THERE YET');
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-26 01:49:58</sys_created_on>
+        <sys_created_on>2018-06-27 23:24:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>2b99b6a7373e1300502a03a973990eda</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>setPleaDeadline</sys_name>
+        <sys_id>b3fba4d837439300502a03a973990e24</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>checkMaxStrikes</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_script_2b99b6a7373e1300502a03a973990eda</sys_update_name>
+        <sys_update_name>sys_script_b3fba4d837439300502a03a973990e24</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-28 02:29:03</sys_updated_on>
+        <sys_updated_on>2018-06-28 02:30:21</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=2b99b6a7373e1300502a03a973990eda"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3fba4d837439300502a03a973990e24"/>
 </record_update>

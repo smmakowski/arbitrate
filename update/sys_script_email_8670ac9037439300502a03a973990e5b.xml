@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_230726_arbitrate_strikes_print_strike_counts</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+			// obtain current number of strikes
+			var message = 'You currently have ';
+			var strikeRecord = new GlideRecord('x_230726_arbitrate_strikes');
+			var arbId = current.getValue('u_arbitrator');
+			strikeRecord.addQuery('u_arbitrator', arbId);
+			strikeRecord.query();
+			var count = strikeRecord.getRowCount();
+		gs.info('got rowCount');
+			message += (count + ' strikes, which means you ');
+          // Add your code here
+			if (count <  gs.getProperty('x_230726_arbitrate.maxNumStrikes')) {
+				message += 'not be ';
+			} else {
+				message += 'are now ';
+			}
+			template.print(message + 'subject to review by an administrator.');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-27 22:33:42</sys_created_on>
+        <sys_id>8670ac9037439300502a03a973990e5b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>x_230726_arbitrate_strikes_print_strike_counts</sys_name>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sys_script_email_8670ac9037439300502a03a973990e5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-28 02:31:45</sys_updated_on>
+    </sys_script_email>
+</record_update>

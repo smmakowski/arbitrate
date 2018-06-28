@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element audit="true" label="Approval" max_length="40" name="sysapproval_approver" type="collection">
-        <element label="Arbitrate Number" max_length="32" name="x_230726_arbitrate_arbitrate_number" reference="x_230726_arbitrate_cases" type="reference"/>
-    </element>
-</database>

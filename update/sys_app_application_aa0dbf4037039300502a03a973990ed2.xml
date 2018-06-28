@@ -5,26 +5,26 @@
         <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
         <description/>
         <device_type>browser</device_type>
-        <hint>View aggregate information and reports</hint>
+        <hint>File cases, view public records, and manage setttings</hint>
         <name/>
         <order>100</order>
-        <roles>x_230726_arbitrate.admin,x_230726_arbitrate.arbitrator</roles>
+        <roles>x_230726_arbitrate.admin,x_230726_arbitrate.arbitrator,x_230726_arbitrate.user</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-27 20:00:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aa0dbf4037039300502a03a973990ed2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>ArbITrate Management (TBD)</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ArbITrate Registrar</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_app_application_aa0dbf4037039300502a03a973990ed2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-27 20:03:26</sys_updated_on>
-        <title>ArbITrate Management (TBD)</title>
+        <sys_updated_on>2018-06-28 02:10:16</sys_updated_on>
+        <title>ArbITrate Registrar</title>
         <view_name/>
     </sys_app_application>
 </record_update>

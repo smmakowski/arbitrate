@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="ArbITrate Case Properties">56d7819837839300502a03a973990efd</category>
+        <order>100</order>
+        <property display_value="x_230726_arbitrate.discussionDeadline" name="x_230726_arbitrate.discussionDeadline">b41dc19837839300502a03a973990e02</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-28 01:50:56</sys_created_on>
+        <sys_id>db9d499837839300502a03a973990e7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_230726_arbitrate.discussionDeadline.ArbITrate Case Properties</sys_name>
+        <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_db9d499837839300502a03a973990e7b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-28 01:50:56</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

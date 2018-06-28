@@ -3,7 +3,7 @@
     <element label="Strikes" max_length="40" name="x_230726_arbitrate_strikes" type="collection">
         <element label="Arbitrator" max_length="32" name="u_arbitrator" reference="sys_user" type="reference"/>
         <element label="Related Case" max_length="32" name="u_related_case" reference="x_230726_arbitrate_cases" type="reference"/>
-        <element choice="1" label="Type" max_length="40" name="u_type" type="choice">
+        <element choice="3" default="no_decision" label="Type" max_length="40" name="u_type" type="choice">
             <choice>
                 <element label="Case filed against them" value="misconduct"/>
                 <element label="Did not render Decision" value="no_decision"/>

@@ -7,36 +7,36 @@
         <content_page/>
         <device_type/>
         <filter/>
-        <hint/>
+        <hint>View and edit deadlines and Maximums</hint>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>DIRECT</link_type>
         <map_page/>
-        <mobile_title>Discussions</mobile_title>
+        <mobile_title>ArbITration Limits (Settings)</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_230726_arbitrate_discussions</name>
-        <order>700</order>
+        <name/>
+        <order/>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>system_properties_ui.do?sysparm_title=ArbITrate Limits and Deadlines&amp;sysparm_category=ArbITrate Case Properties</query>
         <report/>
-        <roles>x_230726_arbitrate.admin,x_230726_arbitrate.arbitrator</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-21 20:58:42</sys_created_on>
+        <sys_created_on>2018-06-28 02:01:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>8c31159e377e1300502a03a973990e70</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>All Discussions</sys_name>
+        <sys_id>3c5f859c37839300502a03a973990e69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ArbITration Limits</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
-        <sys_update_name>sys_app_module_8c31159e377e1300502a03a973990e70</sys_update_name>
+        <sys_update_name>sys_app_module_3c5f859c37839300502a03a973990e69</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-28 02:06:03</sys_updated_on>
+        <sys_updated_on>2018-06-28 02:01:34</sys_updated_on>
         <timeline_page/>
-        <title>All Discussions</title>
+        <title>ArbITration Limits</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

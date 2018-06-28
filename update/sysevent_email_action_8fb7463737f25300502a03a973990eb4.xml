@@ -42,7 +42,7 @@
 <div>&nbsp;</div>
 <div>A complaint has been filed against you in the above subject matter. You have 3 days to enter a plea of 'Responsible' or 'Not Responsible'.</div>
 <div>&nbsp;</div>
-<div>You can plea via two methods. First, you can go to this case in the instance, or alternatively you can reply directly to this email. In the body, you must start with the words "I PLEA" (all caps), and then add 'RESPONSIBLE" (all caps) or "NOTRESPONSIBLE" (all caps no spaces). For example, if you plea 'r not esponsible', respond with (no quotes)...</div>
+<div>You can plea via two methods. First, you can go to this case in the instance, or alternatively you can reply directly to this email. In the body, you must start with the words "I PLEA" (all caps), and then add 'RESPONSIBLE" (all caps) or "NO TRESPONSIBLE" (all caps). For example, if you plea 'Not Responsible', respond with (no quotes)...</div>
 <div>&nbsp;</div>
 <div>'I PLEA NOTRESPONSIBLE'</div>
 <div>&nbsp;</div>
@@ -80,7 +80,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8fb7463737f25300502a03a973990eb4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Complaint filed (Offending Party)</sys_name>
         <sys_overrides/>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
@@ -88,7 +88,7 @@
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sysevent_email_action_8fb7463737f25300502a03a973990eb4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 23:36:16</sys_updated_on>
+        <sys_updated_on>2018-06-28 12:41:42</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

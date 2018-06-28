@@ -11,7 +11,6 @@ if (g_form.getValue('u_status') === 'accepted') {
 	
 }
 
-
 function cancelPage() {
 	GlideDialogWindow.get().destroy();
 }
@@ -81,18 +80,29 @@ function completeDecisionProcess(response) {
         <endpoint>x_230726_arbitrate_chooseDecision.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+
+	<div class="jumbotron">
+		<h2 class="text-center">Decision Selector</h2>
 	<p id="information">Please select your decision, and describe your reasoning...</p>
-	<form>
-	Decision Type:<br />
+	<div class="well">
+		<form>
+		
+		<h4>Decision Type:<span class="mandatory">*</span></h4>
 	<input id="at_fault" type="radio" name="decisionType" value="at_fault" checked="true" /><label>Offending Party At Fault</label><br />
 	<input id="not_at_fault" type="radio" name="decisionType" value="not_at_fault" /><label id="not_at_fault_label">Offending Party Not At Fault</label><br />
-	Reasoning:<br />
+		
 	</form>
-	<input id="reason" type="text" /><br />
-	Additional Details (Please describe suggestion for Remedy here):<br />
-	<input id="additional" type="text" /><br />
-	<button onClick="renderDecision()">Render Decision</button>
-	<button onClick="cancelPage()">Cancel</button>
+		</div>
+		<h4>Reasoning:<span class="mandatory">*</span></h4>
+	<textarea id="reason" rows="1" cols="80" wrap="soft" style="resize:none;"> </textarea><br />
+		<h4>Additional Details (Please describe suggestion for Remedy here):<span class="mandatory">*</span></h4>
+	<textarea id="additional" rows="15" cols="80" wrap="soft" style="resize:vertical;"> </textarea><br />
+	<div class="text-center">
+	<button onClick="renderDecision()" class="btn btn-primary">Render Decision</button>
+	<button onClick="cancelPage()" class="btn btn-danger">Cancel Decision</button>
+		</div>
+	</div>
 </j:jelly>]]></html>
         <name>chooseDecision</name>
         <processing_script/>
@@ -100,13 +110,13 @@ function completeDecisionProcess(response) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-21 03:14:36</sys_created_on>
         <sys_id>b4e5550a37761300502a03a973990ef5</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>chooseDecision</sys_name>
         <sys_package display_value="ArbITrate" source="x_230726_arbitrate">6d125c480f321300475d8e8ce1050e9b</sys_package>
         <sys_policy/>
         <sys_scope display_value="ArbITrate">6d125c480f321300475d8e8ce1050e9b</sys_scope>
         <sys_update_name>sys_ui_page_b4e5550a37761300502a03a973990ef5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-27 03:17:39</sys_updated_on>
+        <sys_updated_on>2018-06-28 03:40:03</sys_updated_on>
     </sys_ui_page>
 </record_update>
